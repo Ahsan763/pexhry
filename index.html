@@ -25,13 +25,13 @@
 
 	<div class="body-wrapper relative z-0">
 		<div id="sidebar"
-			class="fixed top-0 bottom-0 right-0 bg-white text-[#2F3C4A] w-96 z-[999] h-screen translate-x-full transition-all duration-500 ease-in-out">
+			class="fixed top-0 bottom-0 right-0 bg-white text-[#2F3C4A] w-96 z-[999] h-screen translate-x-full transition-all duration-500 ease-in-out lg:hidden">
 			<div class="flex items-center justify-between py-4 px-4 border-b border-[#2F3C4A]">
 				<div class="flex items-center gap-x-2">
 					<img src="assets/images/logo.svg" alt="" class="w-14 h-auto">
 					<img src="assets/images/logo-text.svg" alt="" class="w-20">
 				</div>
-				<div class="closeBTN flex justify-center items-center text-[#2F3C4A] text-xl w-[40px] h-[40px] border-2 border-[#2F3C4A] rounded-[50%]">
+				<div class="closeBTN flex justify-center items-center text-[#2F3C4A] text-xl w-[40px] h-[40px] border-2 border-[#2F3C4A] rounded-[50%] cursor-pointer">
 					<i class="fa-solid fa-xmark"></i>
 				</div>
 			</div>
@@ -58,6 +58,39 @@
 					<a href="#" class="uppercase text-base font-semibold text-[#2F3C4A]">Kontakt</a>
 				</li>
 			</ul>
+			<div class="absolute w-full left-0 bottom-0 border-t border-[#2F3C4A] p-4">
+				<ul class="flex items-center gap-x-4 mb-3 justify-center">
+					<li class="flex items-center gap-x-1">
+						<img src="assets/images/icons/phone.svg" alt="" class="w-4">
+						<a href="tel:+3014749625" class="text-[12px] 2xl:text-sm text-[#576575] font-bold underline">
+							<span class="font-normal">+420 </span> 774 057 570
+						</a>
+					</li>
+					<li class="flex items-center gap-x-1">
+						<img src="assets/images/icons/mail.svg" alt="" class="w-[13px]">
+						<a href="tel:+3014749625" class="text-[12px] 2xl:text-sm text-[#576575] font-bold underline">
+							obchod@rexhry.cz
+						</a>
+					</li>
+				</ul>
+				<ul class="flex items-center gap-x-3 xl:gap-x-4 justify-center">
+					<li>
+						<a href="#" class="flex items-center justify-center">
+							<img src="assets/images/icons/youtube.svg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#" class="flex items-center justify-center">
+							<img src="assets/images/icons/facebook.svg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#" class="flex items-center justify-center">
+							<img src="assets/images/icons/instagram.svg" alt="">
+						</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 		<header class="absolute top-0 left-0 right-0 z-50">
 			<nav
@@ -167,7 +200,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="navbtn flex justify-center text-xl py-5 px-3 items-center lg:hidden" id="burger-menu-button">
+					<div class="navbtn flex justify-center text-xl py-5 px-3 items-center lg:hidden cursor-pointer">
 						<i class="fa-solid fa-bars"></i>
 					</div>
 				</div>

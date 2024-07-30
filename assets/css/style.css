@@ -106,4 +106,5 @@ html {
 }
 #sidebar.active{
 	box-shadow: 0 0 0 5000px rgba(0, 0, 0, 0.35);
+	transform: translateX(0);
 }

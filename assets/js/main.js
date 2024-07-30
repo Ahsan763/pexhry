@@ -1,4 +1,10 @@
 $(document).ready(function () {
+  $(".navbtn").click(function(){
+    $("#sidebar").addClass("active")
+  })
+  $(".closeBTN ").click(function(){
+    $("#sidebar").removeClass("active")
+  })
   var swiper = new Swiper(".bannerSlider", {
     slidesPerView: 1,
     navigation: true,
