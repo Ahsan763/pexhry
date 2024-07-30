@@ -4,19 +4,6 @@ autor:ahsan Contact Whatsup + skype +923014749625;
 gmail:naqashahsan@gmail.com
 */
 
-:root {
-	--color-primary: #2F3C4A;
-	--color-secondary: #566576;
-}
-
-.color-primary {
-	color: var(--color-primary);
-}
-
-.color-secondary {
-	color: var(--color-secondary);
-}
-
 body,
 html {
 	font-family: "Be Vietnam Pro", sans-serif;
@@ -31,14 +18,6 @@ html {
 
 }
 
-.font-heading {
-	font-family: "Inknut Antiqua", serif;
-}
-
-.be-vietnam-pro {
-	font-family: "Be Vietnam Pro", sans-serif;
-}
-
 .container {
 	width: 100%;
 	max-width: 1320px !important;
@@ -50,17 +29,6 @@ html {
 }
 .navlink.active{
 	color: #1D71C9;
-}
-.shadow1 {
-	box-shadow: 0 10px 24px 0 #00000080 !important;
-}
-
-.shadow2 {
-	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.35) !important;
-}
-
-.shadow3 {
-	box-shadow: 0 10px 24px 0 #00000080 !important;
 }
 
 .skew-bg-clip {
