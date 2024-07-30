@@ -1,0 +1,109 @@
+/*
+Theme name:;
+autor:ahsan Contact Whatsup + skype +923014749625;
+gmail:naqashahsan@gmail.com
+*/
+
+:root {
+	--color-primary: #2F3C4A;
+	--color-secondary: #566576;
+}
+
+.color-primary {
+	color: var(--color-primary);
+}
+
+.color-secondary {
+	color: var(--color-secondary);
+}
+
+body,
+html {
+	font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.league-spartan {
+	font-family: "League Spartan", sans-serif;
+}
+
+.font-inknut-antiqua {
+	font-family: "Inknut Antiqua", serif;
+
+}
+
+.font-heading {
+	font-family: "Inknut Antiqua", serif;
+}
+
+.be-vietnam-pro {
+	font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.container {
+	width: 100%;
+	max-width: 1320px !important;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.shadow1 {
+	box-shadow: 0 10px 24px 0 #00000080 !important;
+}
+
+.shadow2 {
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.35) !important;
+}
+
+.shadow3 {
+	box-shadow: 0 10px 24px 0 #00000080 !important;
+}
+
+.skew-bg-clip {
+	clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
+}
+
+.bannerSlide1 {
+	background: url(../images/banner.png) no-repeat top;
+	background-size: cover;
+}
+
+.bannerSlide2 {
+	background: url(../images/banner2.png) no-repeat center top;
+	background-size: cover;
+}
+
+.bannerSlide3 {
+	background: url(../images/slide3.png) no-repeat center top;
+	background-size: cover;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+	display: none;
+}
+
+.heropagination .swiper-pagination-bullet {
+	width: 14px !important;
+	height: 14px !important;
+	background-color: transparent;
+	border: 3px solid #fff;
+	opacity: 0.6;
+	border-radius: 50%;
+}
+
+.heropagination .swiper-pagination-bullet-active {
+	width: 18px !important;
+	height: 18px !important;
+	opacity: 1;
+}
+
+.footer-bg {
+	background-image: linear-gradient(rgba(47, 60, 74, 0.9), rgba(47, 60, 74, 0.9)), url(../images/footer.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+	clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%);
+}
+#sidebar.active{
+	box-shadow: 0 0 0 5000px rgba(0, 0, 0, 0.35);
+}

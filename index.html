@@ -1,0 +1,729 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<!-- Favicons -->
+	<link href="assets/images/favicone.png" rel="icon">
+	<!-- font aweasome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=League+Spartan:wght@100..900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<!-- Main Stylesheet File -->
+	<link href="assets/css/style.css" rel="stylesheet">
+	<link href="assets/css/media_queries.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="body-wrapper relative z-0">
+		<div id="sidebar"
+			class="fixed top-0 bottom-0 right-0 bg-white text-[#2F3C4A] w-96 z-[999] h-screen translate-x-full transition-all duration-500 ease-in-out">
+			<div class="flex items-center justify-between py-4 px-4 border-b border-[#2F3C4A]">
+				<div class="flex items-center gap-x-2">
+					<img src="assets/images/logo.svg" alt="" class="w-14 h-auto">
+					<img src="assets/images/logo-text.svg" alt="" class="w-20">
+				</div>
+				<div class="closeBTN flex justify-center items-center text-[#2F3C4A] text-xl w-[40px] h-[40px] border-2 border-[#2F3C4A] rounded-[50%]">
+					<i class="fa-solid fa-xmark"></i>
+				</div>
+			</div>
+			<ul class="px-4 pt-6 pb-4">
+				<li class="py-2">
+					<a href="#" class="uppercase text-base font-semibold text-[#2F3C4A]">Katalog her</a>
+				</li>
+				<li class="py-2">
+					<a href="#" class="uppercase text-base font-semibold text-[#2F3C4A]">Připravujeme</a>
+				</li>
+				<li class="py-2">
+					<a href="#" class="uppercase text-base font-semibold text-[#2F3C4A]">Aktuality</a>
+				</li>
+				<li class="py-2">
+					<a href="#" class="uppercase text-base font-semibold text-[#2F3C4A]">O nás</a>
+				</li>
+				<li class="py-2">
+					<a href="#" class="uppercase text-base font-semibold text-[#2F3C4A]">Pro obchodníky</a>
+				</li>
+				<li class="py-2">
+					<a href="#" class="uppercase text-base font-semibold text-[#2F3C4A]">Reklamace</a>
+				</li>
+				<li class="py-2">
+					<a href="#" class="uppercase text-base font-semibold text-[#2F3C4A]">Kontakt</a>
+				</li>
+			</ul>
+		</div>
+		<header class="absolute top-0 left-0 right-0 z-50">
+			<nav
+				class="w-[calc(100%-20px)] sm:max-w-[580px] md:max-w-[720px] lg:max-w-[980px] xl:max-w-[1220px] 2xl:max-w-[1326px] mx-auto bg-white pt-[6px]  shadow1 pl-[80px] lg:pl-[90px] xl:pl-[103px] 2xl:pl-[120px] pr-2.5 relative">
+				<div class="flex items-center justify-between">
+					<div class="flex items-center">
+						<a href="/"
+							class="flex justify-center items-center w-fit pt-3 lg:pt-[19px] xl:pt-[22px] 2xl:pt-[27px] pb-3 lg:pb-[18px] xl:pb-[20px] 2xl:pb-[25px] px-3 lg:px-3.5 xl:px-[18px] 2xl:px-[21px] absolute top-[-2px] lg:top-[-5px] 2xl:top-[-10px] bg-white left-[-6px] rotate-[5deg]">
+							<img src="assets/images/logo.svg" alt=""
+								class="w-[55px] lg:w-[70px] 2xl:w-[80px] xl:h-[70px] 2xl:h-[80px]">
+						</a>
+						<div class="">
+							<img src="assets/images/logo-text.svg"
+								class="w-[80px] lg:w-[90px] xl:w-[100px] 2xl:w-[124px] h-auto mb-1.5" alt="">
+							<p class="color-secondary text-sm xl:text-base 2xl:text-[18px]">Královsky se bavte</p>
+						</div>
+					</div>
+					<div class="navRight hidden lg:block">
+						<div
+							class="flex items-center gap-x-7 xl:gap-x-10 2xl:gap-x-16  mb-3.5 2xl:mb-[17px] justify-end pr-2.5 xl:pr-4">
+							<div class="border border-[#C4CCD4] flex items-center bg-[#E2E5E9] p-[3px] gap-x-1">
+								<input type="text" placeholder="Vyhledat hru..."
+									class="bg-[#E2E5E9] w-[225px] text-[#566576] pl-[10px] text-sm border-none outline-none">
+								<button class="w-[30px] h-[30px] bg-[#C4CCD4] flex items-center justify-center">
+									<img src="assets/images/icons/search.svg" alt="" class="w-[18px]">
+								</button>
+							</div>
+							<div class="flex items-center gap-x-6">
+								<ul class="flex items-center gap-x-4">
+									<li class="flex items-center gap-x-1">
+										<img src="assets/images/icons/phone.svg" alt="" class="w-4">
+										<a href="tel:+3014749625" class="text-[12px] 2xl:text-sm text-[#576575] font-bold underline">
+											<span class="font-normal">+420 </span> 774 057 570
+										</a>
+									</li>
+									<li class="flex items-center gap-x-1">
+										<img src="assets/images/icons/mail.svg" alt="" class="w-[13px]">
+										<a href="tel:+3014749625" class="text-[12px] 2xl:text-sm text-[#576575] font-bold underline">
+											obchod@rexhry.cz
+										</a>
+									</li>
+								</ul>
+								<ul class="flex items-center gap-x-3 xl:gap-x-4">
+									<li>
+										<a href="#" class="flex items-center justify-center">
+											<img src="assets/images/icons/youtube.svg" alt="">
+										</a>
+									</li>
+									<li>
+										<a href="#" class="flex items-center justify-center">
+											<img src="assets/images/icons/facebook.svg" alt="">
+										</a>
+									</li>
+									<li>
+										<a href="#" class="flex items-center justify-center">
+											<img src="assets/images/icons/instagram.svg" alt="">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- nav to bar end -->
+						<div>
+							<ul class="flex items-center">
+								<li>
+									<a href="/"
+										class=" navlink flex justify-center text-[13px] 2xl:text-sm text-[#2F3C4A] font-black px-2 xl:px-4 pt-1 2xl:pt-2 pb-3.5 xl:pb-4 2xl:pb-6 hover:text-[#1D71C9] uppercase relative overflow-hidden border-r border-[#C4CCD4] after:content-[''] after:absolute after:bottom-[-15px] after:left-[calc(50%-7.5px)] after:w-[15px] after:h-[15px] after:bg-white after:border-[3px] after:border-[#1D71C9] after:rounded-[50%] after:transition-all hover:after:bottom-[-7px]">
+										Katalog her
+									</a>
+								</li>
+								<li>
+									<a href="/"
+										class=" navlink flex justify-center text-[13px] 2xl:text-sm text-[#2F3C4A] font-black px-2 xl:px-4 pt-1 2xl:pt-2 pb-3.5 xl:pb-4 2xl:pb-6 hover:text-[#1D71C9] uppercase relative overflow-hidden border-r border-[#C4CCD4] after:content-[''] after:absolute after:bottom-[-15px] after:left-[calc(50%-7.5px)] after:w-[15px] after:h-[15px] after:bg-white after:border-[3px] after:border-[#1D71C9] after:rounded-[50%] after:transition-all hover:after:bottom-[-7px]">
+										Připravujeme
+									</a>
+								</li>
+								<li>
+									<a href="/"
+										class=" navlink flex justify-center text-[13px] 2xl:text-sm text-[#2F3C4A] font-black px-2 xl:px-4 pt-1 2xl:pt-2 pb-3.5 xl:pb-4 2xl:pb-6 hover:text-[#1D71C9] uppercase relative overflow-hidden border-r border-[#C4CCD4] after:content-[''] after:absolute after:bottom-[-15px] after:left-[calc(50%-7.5px)] after:w-[15px] after:h-[15px] after:bg-white after:border-[3px] after:border-[#1D71C9] after:rounded-[50%] after:transition-all hover:after:bottom-[-7px]">
+										Aktuality
+									</a>
+								</li>
+								<li>
+									<a href="/"
+										class=" navlink flex justify-center text-[13px] 2xl:text-sm text-[#2F3C4A] font-black px-2 xl:px-4 pt-1 2xl:pt-2 pb-3.5 xl:pb-4 2xl:pb-6 hover:text-[#1D71C9] uppercase relative overflow-hidden border-r border-[#C4CCD4] after:content-[''] after:absolute after:bottom-[-15px] after:left-[calc(50%-7.5px)] after:w-[15px] after:h-[15px] after:bg-white after:border-[3px] after:border-[#1D71C9] after:rounded-[50%] after:transition-all hover:after:bottom-[-7px]">
+										O nás
+									</a>
+								</li>
+								<li>
+									<a href="/"
+										class=" navlink flex justify-center text-[13px] 2xl:text-sm text-[#2F3C4A] font-black px-2 xl:px-4 pt-1 2xl:pt-2 pb-3.5 xl:pb-4 2xl:pb-6 hover:text-[#1D71C9] uppercase relative overflow-hidden border-r border-[#C4CCD4] after:content-[''] after:absolute after:bottom-[-15px] after:left-[calc(50%-7.5px)] after:w-[15px] after:h-[15px] after:bg-white after:border-[3px] after:border-[#1D71C9] after:rounded-[50%] after:transition-all hover:after:bottom-[-7px]">
+										Pro obchodníky
+									</a>
+								</li>
+								<li>
+									<a href="/"
+										class=" navlink flex justify-center text-[13px] 2xl:text-sm text-[#2F3C4A] font-black px-2 xl:px-4 pt-1 2xl:pt-2 pb-3.5 xl:pb-4 2xl:pb-6 hover:text-[#1D71C9] uppercase relative overflow-hidden border-r border-[#C4CCD4] after:content-[''] after:absolute after:bottom-[-15px] after:left-[calc(50%-7.5px)] after:w-[15px] after:h-[15px] after:bg-white after:border-[3px] after:border-[#1D71C9] after:rounded-[50%] after:transition-all hover:after:bottom-[-7px]">
+										Reklamace
+									</a>
+								</li>
+								<li>
+									<a href="/"
+										class=" navlink flex justify-center text-[13px] 2xl:text-sm text-[#2F3C4A] font-black px-2 xl:px-4 pt-1 2xl:pt-2 pb-3.5 xl:pb-4 2xl:pb-6 hover:text-[#1D71C9] uppercase relative overflow-hidden border-r border-[#C4CCD4] after:content-[''] after:absolute after:bottom-[-15px] after:left-[calc(50%-7.5px)] after:w-[15px] after:h-[15px] after:bg-white after:border-[3px] after:border-[#1D71C9] after:rounded-[50%] after:transition-all hover:after:bottom-[-7px]">
+										Kontakt
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="navbtn flex justify-center text-xl py-5 px-3 items-center lg:hidden" id="burger-menu-button">
+						<i class="fa-solid fa-bars"></i>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- header end -->
+		<section class="hero bannerSlider swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div
+						class="pt-[215px] sm:pt-[240px] xl:pt-[250px] 2xl:pt-[310px] pb-[230px] sm:pb-[260px] xl:pb-[270px] 2xl:pb-[333px] bannerSlide bannerSlide1 relative z-0 overflow-hidden skew-bg-clip">
+						<div class="max-w-[540px] mx-auto text-center ">
+							<div class="container">
+								<h1
+									class="text-[30px] md:text-[40px] xl:text-[48px] 2xl:text-6xl text-[#2F3C4A] font-bold font-inknut-antiqua mb-2.5 leading-[1.1] uppercase">
+									Spící bohové
+								</h1>
+								<h6
+									class="color-secondary text-[22px] md:text-[26] xl:text-[32px] 2xl:text-[40px] font-medium mb-3 md:mb-5 xl:mb-6 2xl:mb-8 leading-[1.7] font-inknut-antiqua">
+									Rozšíření:
+									říliv
+									zkázy
+								</h6>
+								<p
+									class="text-[#2F3C4A] text-base md:text-xl xl:text-[26px] 2xl:text-4xl font-medium mb-[30px] md:mb-[35px] xl:mb-[50px] 2xl:mb-[70px]">
+									Vychází již
+									32. 12. 2025</p>
+								<a href="#"
+									class="flex items-center justify-center w-fit mx-auto rounded-[100px] shadow-md px-6 md:px-8 xl:px-11 2xl:px-14 py-2.5 md:py-3 xl:py-4 2xl:py-5 bg-[#EC5C13] text-white uppercase text-sm xl:text-base 2xl:text-lg relative overflow-hidden hover:shadow-none gap-x-1 md:gap-x-1.5 group">
+									Dozvědět
+									se více
+									<i
+										class="fa-solid fa-chevron-right btnIcn rotate-[40deg] translate-x-[40px] translate-y-[60px] transition-all duration-300 group-hover:rotate-0 group-hover:translate-x-0 group-hover:translate-y-[-2px]"></i>
+								</a>
+							</div>
+
+						</div>
+						<img src="assets/images/banner-icons-bg.svg" alt="" class="absolute bottom-[-60px] right-0 z-30 w-[160px]">
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div
+						class="pt-[215px] sm:pt-[240px] xl:pt-[250px] 2xl:pt-[310px] pb-[230px] sm:pb-[260px] xl:pb-[270px] 2xl:pb-[333px] bannerSlide bannerSlide1 relative z-0 overflow-hidden skew-bg-clip">
+						<div class="max-w-[540px] mx-auto text-center ">
+							<div class="container">
+								<h1
+									class="text-[30px] md:text-[40px] xl:text-[48px] 2xl:text-6xl text-[#2F3C4A] font-bold font-inknut-antiqua mb-2.5 leading-[1.1] uppercase">
+									Spící bohové
+								</h1>
+								<h6
+									class="color-secondary text-[22px] md:text-[26] xl:text-[32px] 2xl:text-[40px] font-medium mb-3 md:mb-5 xl:mb-6 2xl:mb-8 leading-[1.7] font-inknut-antiqua">
+									Rozšíření:
+									říliv
+									zkázy
+								</h6>
+								<p
+									class="text-[#2F3C4A] text-base md:text-xl xl:text-[26px] 2xl:text-4xl font-medium mb-[30px] md:mb-[35px] xl:mb-[50px] 2xl:mb-[70px]">
+									Vychází již
+									32. 12. 2025</p>
+								<a href="#"
+									class="flex items-center justify-center w-fit mx-auto rounded-[100px] shadow-md px-6 md:px-8 xl:px-11 2xl:px-14 py-2.5 md:py-3 xl:py-4 2xl:py-5 bg-[#EC5C13] text-white uppercase text-sm xl:text-base 2xl:text-lg relative overflow-hidden hover:shadow-none gap-x-1 md:gap-x-1.5 group">
+									Dozvědět
+									se více
+									<i
+										class="fa-solid fa-chevron-right btnIcn rotate-[40deg] translate-x-[40px] translate-y-[60px] transition-all duration-300 group-hover:rotate-0 group-hover:translate-x-0 group-hover:translate-y-[-2px]"></i>
+								</a>
+							</div>
+
+						</div>
+						<img src="assets/images/banner-icons-bg.svg" alt="" class="absolute bottom-[-60px] right-0 z-30 w-[160px]">
+					</div>
+				</div>
+			</div>
+			<div class="swiper-button-prev">
+				<i class="fa-solid fa-chevron-left text-xl md:text-2xl xl:text-3xl text-white"></i>
+			</div>
+			<div class="swiper-button-next">
+				<i class="fa-solid fa-chevron-right text-xl md:text-2xl xl:text-3xl text-white"></i>
+			</div>
+			<div
+				class="heropagination absolute !bottom-[110px] xl:!bottom-[130px] 2xl:!bottom-[230px] z-20 flex justify-center items-center lg:gap-x-1 xl:gap-x-2 2xl:gap-x-[18px]">
+			</div>
+		</section>
+		<!-- hero end-->
+		<section class="py-9 relative z-0">
+			<div class="container">
+				<h2
+					class="text-[27px] xl:text-3xl 2xl:text-4xl font-bold text-[#2F3C4A] xl:leading-[1.7] 2xl:leading-[2] font-inknut-antiqua uppercase text-center">
+					Novinky</h2>
+				<p
+					class="text-xl xl:text-[24px] 2xl:text-[30px] font-medium color-secondary leading-[1.8] font-inknut-antiqua text-center mb-5">
+					Přinášíme
+					vám
+					zajímavé
+					deskovky v češtině</p>
+				<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mb-[25px]">
+					<!-- card -->
+					<a href="#" class="card p-3 xl:p-[15px] bg-white group">
+						<div
+							class="relative z-0 h-[290px] md:h-[290px] xl:h-[360px] 2xl:h-[400px] overflow-hidden group-hover:rotate-[5deg] transition-all duration-500 cursor-pointer group-hover:scale-95">
+							<img src="assets/images/card1.png" alt=""
+								class="w-full h-full relative z-10 group-hover:blur-sm transition-all duration-500">
+							<div
+								class="absolute w-full h-full top-0 left-0 opacity-0 bg-[#1d70c985] z-20 group-hover:opacity-100 transition-all duration-500">
+							</div>
+							<img src="assets/images/icons/card-search-icon.svg" alt=""
+								class="absolute rotate-45 top-[110%] left-[50%] transition-all duration-500 group-hover:top-[50%] group-hover:rotate-0 group-hover:translate-x-[-50%] group-hover:translate-y-[-50%] z-30 w-[55px] xl:w-[78px] h-auto">
+						</div>
+						<!-- card header end -->
+						<div
+							class="pt-3 md:pt-3.5 xl:pt-[18px] pb-[18px] md:pb-[22px] xl:pb-[27px] px-2.5 md:px-3 xl:px-[20px] group-hover:translate-y-[-25px] transition-all duration-500">
+							<div class="flex gap-1 xl:gap-2.5 flex-wrap group-hover:gap-x-[2px] xl:group-hover:gap-2">
+								<div
+									class="text-white text-[8px] xl:text-[10px] font-extrabold bg-[#1D71C9] px-2.5 xl:px-[15px] py-1.5 xl:py-[9px] rounded-[40px] uppercase relative flex items-center w-fit leading-[1] mb-[13px] group-hover:translate-y-[-45px] xl:group-hover:translate-y-[-75px] transition-all duration-500 group-hover:bg-transparent group-hover:text-[9px] xl:group-hover:text-[12px]">
+									Pro náročné
+								</div>
+								<div
+									class="text-white text-[8px] xl:text-[10px] font-extrabold bg-[#1D71C9] px-2.5 xl:px-[15px] py-1.5 xl:py-[9px] rounded-[40px] uppercase relative flex items-center w-fit leading-[1] mb-[13px] group-hover:translate-y-[-45px] xl:group-hover:translate-y-[-75px] transition-all duration-500 group-hover:bg-transparent group-hover:text-[9px] xl:group-hover:text-[12px]">
+									Pro náročné
+								</div>
+							</div>
+							<h6
+								class="text-[#2F3C4A] text-[13px] md:text-sm xl:text-base 2xl:text-[18px] font-extrabold mb-[6px] uppercase group-hover:text-[#1D71C9] transition-all duration-500 group-hover:mb-0">
+								DUNA
+								Imperium – povstání</h6>
+							<p
+								class="text-[11px] xl:text-[13px] font-semibold text-[#8A98A8] mb-1.5 xl:mb-2.5 transition-all duration-500 group-hover:mb-1 xl:group-hover:mb-1.5">
+								22. 6. 2024</p>
+							<p
+								class="text-[13px] md:text-sm xl:text-base leading-[25px] text-[#2F3C4A] line-clamp-3 font-light transition-all duration-500 group-hover:leading-[23px]">
+								Duna: Impérium - Povstání je samostatně hratelná desková hra, která navazuje na populární hru Duna:
+								Impérium. Stejně jako původní Duna v sobě snoubí mechaniky umisťování figurek na herní plán
+								(workerplacemnt) a stavbu balíčku za pomoci karet z nabídky (deckbuilding).
+							</p>
+						</div>
+					</a>
+					<a href="#" class="card p-3 xl:p-[15px] bg-white group">
+						<div
+							class="relative z-0 h-[290px] md:h-[290px] xl:h-[360px] 2xl:h-[400px] overflow-hidden group-hover:rotate-[5deg] transition-all duration-500 cursor-pointer group-hover:scale-95">
+							<img src="assets/images/card2.png" alt=""
+								class="w-full h-full relative z-10 group-hover:blur-sm transition-all duration-500">
+							<div
+								class="absolute w-full h-full top-0 left-0 opacity-0 bg-[#1d70c985] z-20 group-hover:opacity-100 transition-all duration-500">
+							</div>
+							<img src="assets/images/icons/card-search-icon.svg" alt=""
+								class="absolute rotate-45 top-[110%] left-[50%] transition-all duration-500 group-hover:top-[50%] group-hover:rotate-0 group-hover:translate-x-[-50%] group-hover:translate-y-[-50%] z-30 w-[55px] xl:w-[78px] h-auto">
+						</div>
+						<!-- card header end -->
+						<div
+							class="pt-3 md:pt-3.5 xl:pt-[18px] pb-[18px] md:pb-[22px] xl:pb-[27px] px-2.5 md:px-3 xl:px-[20px] group-hover:translate-y-[-25px] transition-all duration-500">
+							<div class="flex gap-1 xl:gap-2.5 flex-wrap group-hover:gap-x-[2px] xl:group-hover:gap-2">
+								<div
+									class="text-white text-[8px] xl:text-[10px] font-extrabold bg-[#1D71C9] px-2.5 xl:px-[15px] py-1.5 xl:py-[9px] rounded-[40px] uppercase relative flex items-center w-fit leading-[1] mb-[13px] group-hover:translate-y-[-45px] xl:group-hover:translate-y-[-75px] transition-all duration-500 group-hover:bg-transparent group-hover:text-[9px] xl:group-hover:text-[12px]">
+									Pro náročné
+								</div>
+								<div
+									class="text-white text-[8px] xl:text-[10px] font-extrabold bg-[#1D71C9] px-2.5 xl:px-[15px] py-1.5 xl:py-[9px] rounded-[40px] uppercase relative flex items-center w-fit leading-[1] mb-[13px] group-hover:translate-y-[-45px] xl:group-hover:translate-y-[-75px] transition-all duration-500 group-hover:bg-transparent group-hover:text-[9px] xl:group-hover:text-[12px]">
+									Pro dva
+								</div>
+							</div>
+
+							<h6
+								class="text-[#2F3C4A] text-[13px] md:text-sm xl:text-base 2xl:text-[18px] font-extrabold mb-[6px] uppercase group-hover:text-[#1D71C9] transition-all duration-500 group-hover:mb-0">
+								Kacíř: Zkáza Roanoke – kompletní herní + doplňky</h6>
+							<p
+								class="text-[11px] xl:text-[13px] font-semibold text-[#8A98A8] mb-1.5 xl:mb-2.5 transition-all duration-500 group-hover:mb-1 xl:group-hover:mb-1.5">
+								22. 6. 2024</p>
+							<p
+								class="text-[13px] md:text-sm xl:text-base leading-[25px] text-[#2F3C4A] line-clamp-3 font-light transition-all duration-500 group-hover:leading-[23px]">
+								Kacíř: Zkáza Roanoke je asymetrická karetní hra pro dva hráče, která je zasazena do počátku kolonizace
+								Ameriky do osady Roanoke. Jádrem hry je konflikt čarodějnice a jejího lovce. Čarodějnice se snaží
+								dokončit rituál a získat pod svoji nadvládu osadu, zatímco lovec se snaží vypátrat, za koho se
+								čarodějnice vydává.
+							</p>
+						</div>
+					</a>
+					<a href="#" class="card p-3 xl:p-[15px] bg-white group">
+						<div
+							class="relative z-0 h-[290px] md:h-[290px] xl:h-[360px] 2xl:h-[400px] overflow-hidden group-hover:rotate-[5deg] transition-all duration-500 cursor-pointer group-hover:scale-95">
+							<img src="assets/images/card3.png" alt=""
+								class="w-full h-full relative z-10 group-hover:blur-sm transition-all duration-500">
+							<div
+								class="absolute w-full h-full top-0 left-0 opacity-0 bg-[#1d70c985] z-20 group-hover:opacity-100 transition-all duration-500">
+							</div>
+							<img src="assets/images/icons/card-search-icon.svg" alt=""
+								class="absolute rotate-45 top-[110%] left-[50%] transition-all duration-500 group-hover:top-[50%] group-hover:rotate-0 group-hover:translate-x-[-50%] group-hover:translate-y-[-50%] z-30 w-[55px] xl:w-[78px] h-auto">
+						</div>
+						<!-- card header end -->
+						<div
+							class="pt-3 md:pt-3.5 xl:pt-[18px] pb-[18px] md:pb-[22px] xl:pb-[27px] px-2.5 md:px-3 xl:px-[20px] group-hover:translate-y-[-25px] transition-all duration-500">
+							<div class="flex gap-1 xl:gap-2.5 flex-wrap group-hover:gap-x-[2px] xl:group-hover:gap-2">
+								<div
+									class="text-white text-[8px] xl:text-[10px] font-extrabold bg-[#1D71C9] px-2.5 xl:px-[15px] py-1.5 xl:py-[9px] rounded-[40px] uppercase relative flex items-center w-fit leading-[1] mb-[13px] group-hover:translate-y-[-45px] xl:group-hover:translate-y-[-75px] transition-all duration-500 group-hover:bg-transparent group-hover:text-[9px] xl:group-hover:text-[12px]">
+									Rodinné
+								</div>
+								<div
+									class="text-white text-[8px] xl:text-[10px] font-extrabold bg-[#1D71C9] px-2.5 xl:px-[15px] py-1.5 xl:py-[9px] rounded-[40px] uppercase relative flex items-center w-fit leading-[1] mb-[13px] group-hover:translate-y-[-45px] xl:group-hover:translate-y-[-75px] transition-all duration-500 group-hover:bg-transparent group-hover:text-[9px] xl:group-hover:text-[12px]">
+									Pro náročné
+								</div>
+								<div
+									class="text-white text-[8px] xl:text-[10px] font-extrabold bg-[#1D71C9] px-2.5 xl:px-[15px] py-1.5 xl:py-[9px] rounded-[40px] uppercase relative flex items-center w-fit leading-[1] mb-[13px] group-hover:translate-y-[-45px] xl:group-hover:translate-y-[-75px] transition-all duration-500 group-hover:bg-transparent group-hover:text-[9px] xl:group-hover:text-[12px]">
+									Párty
+								</div>
+							</div>
+
+							<h6
+								class="text-[#2F3C4A] text-[13px] md:text-sm xl:text-base 2xl:text-[18px] font-extrabold mb-[6px] uppercase group-hover:text-[#1D71C9] transition-all duration-500 group-hover:mb-0">
+								Břink! V katakombách</h6>
+							<p
+								class="text-[11px] xl:text-[13px] font-semibold text-[#8A98A8] mb-1.5 xl:mb-2.5 transition-all duration-500 group-hover:mb-1 xl:group-hover:mb-1.5">
+								22. 6. 2024</p>
+							<p
+								class="text-[13px] md:text-sm xl:text-base leading-[25px] text-[#2F3C4A] line-clamp-3 font-light transition-all duration-500 group-hover:leading-[23px]">
+								Břink! V katakombách je desková hra, ve které se hráči v roli zlodějů vydají do kobek. Jejich cílem je
+								naloupit co největší lup, nicméně musí si dát pozor, aby nenadělali příliš hluku a nedopadla je dračice!
+								Hra navazuje na původní hru Břink!, nicméně je plně samostatně hratelná a kombinovatelná
+							</p>
+						</div>
+					</a>
+					<a href="#" class="card p-3 xl:p-[15px] bg-white group">
+						<div
+							class="relative z-0 h-[290px] md:h-[290px] xl:h-[360px] 2xl:h-[400px] overflow-hidden group-hover:rotate-[5deg] transition-all duration-500 cursor-pointer group-hover:scale-95">
+							<img src="assets/images/card4.png" alt=""
+								class="w-full h-full relative z-10 group-hover:blur-sm transition-all duration-500">
+							<div
+								class="absolute w-full h-full top-0 left-0 opacity-0 bg-[#1d70c985] z-20 group-hover:opacity-100 transition-all duration-500">
+							</div>
+							<img src="assets/images/icons/card-search-icon.svg" alt=""
+								class="absolute rotate-45 top-[110%] left-[50%] transition-all duration-500 group-hover:top-[50%] group-hover:rotate-0 group-hover:translate-x-[-50%] group-hover:translate-y-[-50%] z-30 w-[55px] xl:w-[78px] h-auto">
+						</div>
+						<!-- card header end -->
+						<div
+							class="pt-3 md:pt-3.5 xl:pt-[18px] pb-[18px] md:pb-[22px] xl:pb-[27px] px-2.5 md:px-3 xl:px-[20px] group-hover:translate-y-[-25px] transition-all duration-500">
+							<div class="flex gap-1 xl:gap-2.5 flex-wrap group-hover:gap-x-[2px] xl:group-hover:gap-2">
+								<div
+									class="text-white text-[8px] xl:text-[10px] font-extrabold bg-[#1D71C9] px-2.5 xl:px-[15px] py-1.5 xl:py-[9px] rounded-[40px] uppercase relative flex items-center w-fit leading-[1] mb-[13px] group-hover:translate-y-[-45px] xl:group-hover:translate-y-[-75px] transition-all duration-500 group-hover:bg-transparent group-hover:text-[9px] xl:group-hover:text-[12px]">
+									Rodinné
+								</div>
+								<div
+									class="text-white text-[8px] xl:text-[10px] font-extrabold bg-[#1D71C9] px-2.5 xl:px-[15px] py-1.5 xl:py-[9px] rounded-[40px] uppercase relative flex items-center w-fit leading-[1] mb-[13px] group-hover:translate-y-[-45px] xl:group-hover:translate-y-[-75px] transition-all duration-500 group-hover:bg-transparent group-hover:text-[9px] xl:group-hover:text-[12px]">
+									Pro náročné
+								</div>
+								<div
+									class="text-white text-[8px] xl:text-[10px] font-extrabold bg-[#1D71C9] px-2.5 xl:px-[15px] py-1.5 xl:py-[9px] rounded-[40px] uppercase relative flex items-center w-fit leading-[1] mb-[13px] group-hover:translate-y-[-45px] xl:group-hover:translate-y-[-75px] transition-all duration-500 group-hover:bg-transparent group-hover:text-[9px] xl:group-hover:text-[12px]">
+									Párty
+								</div>
+							</div>
+
+							<h6
+								class="text-[#2F3C4A] text-[13px] md:text-sm xl:text-base 2xl:text-[18px] font-extrabold mb-[6px] uppercase group-hover:text-[#1D71C9] transition-all duration-500 group-hover:mb-0">
+								Břink! V katakombách</h6>
+							<p
+								class="text-[11px] xl:text-[13px] font-semibold text-[#8A98A8] mb-1.5 xl:mb-2.5 transition-all duration-500 group-hover:mb-1 xl:group-hover:mb-1.5">
+								22. 6. 2024</p>
+							<p
+								class="text-[13px] md:text-sm xl:text-base leading-[25px] text-[#2F3C4A] line-clamp-3 font-light transition-all duration-500 group-hover:leading-[23px]">
+								Břink! V katakombách je desková hra, ve které se hráči v roli zlodějů vydají do kobek. Jejich cílem je
+								naloupit co největší lup, nicméně musí si dát pozor, aby nenadělali příliš hluku a nedopadla je dračice!
+								Hra navazuje na původní hru Břink!, nicméně je plně samostatně hratelná a kombinovatelná
+							</p>
+						</div>
+					</a>
+					<a href="#" class="card p-3 xl:p-[15px] bg-white group">
+						<div
+							class="relative z-0 h-[290px] md:h-[290px] xl:h-[360px] 2xl:h-[400px] overflow-hidden group-hover:rotate-[5deg] transition-all duration-500 cursor-pointer group-hover:scale-95">
+							<img src="assets/images/card5.png" alt=""
+								class="w-full h-full relative z-10 group-hover:blur-sm transition-all duration-500">
+							<div
+								class="absolute w-full h-full top-0 left-0 opacity-0 bg-[#1d70c985] z-20 group-hover:opacity-100 transition-all duration-500">
+							</div>
+							<img src="assets/images/icons/card-search-icon.svg" alt=""
+								class="absolute rotate-45 top-[110%] left-[50%] transition-all duration-500 group-hover:top-[50%] group-hover:rotate-0 group-hover:translate-x-[-50%] group-hover:translate-y-[-50%] z-30 w-[55px] xl:w-[78px] h-auto">
+						</div>
+						<!-- card header end -->
+						<div
+							class="pt-3 md:pt-3.5 xl:pt-[18px] pb-[18px] md:pb-[22px] xl:pb-[27px] px-2.5 md:px-3 xl:px-[20px] group-hover:translate-y-[-25px] transition-all duration-500">
+							<div class="flex gap-1 xl:gap-2.5 flex-wrap group-hover:gap-x-[2px] xl:group-hover:gap-2">
+								<div
+									class="text-white text-[8px] xl:text-[10px] font-extrabold bg-[#1D71C9] px-2.5 xl:px-[15px] py-1.5 xl:py-[9px] rounded-[40px] uppercase relative flex items-center w-fit leading-[1] mb-[13px] group-hover:translate-y-[-45px] xl:group-hover:translate-y-[-75px] transition-all duration-500 group-hover:bg-transparent group-hover:text-[9px] xl:group-hover:text-[12px]">
+									Rodinné
+								</div>
+								<div
+									class="text-white text-[8px] xl:text-[10px] font-extrabold bg-[#1D71C9] px-2.5 xl:px-[15px] py-1.5 xl:py-[9px] rounded-[40px] uppercase relative flex items-center w-fit leading-[1] mb-[13px] group-hover:translate-y-[-45px] xl:group-hover:translate-y-[-75px] transition-all duration-500 group-hover:bg-transparent group-hover:text-[9px] xl:group-hover:text-[12px]">
+									Pro náročné
+								</div>
+								<div
+									class="text-white text-[8px] xl:text-[10px] font-extrabold bg-[#1D71C9] px-2.5 xl:px-[15px] py-1.5 xl:py-[9px] rounded-[40px] uppercase relative flex items-center w-fit leading-[1] mb-[13px] group-hover:translate-y-[-45px] xl:group-hover:translate-y-[-75px] transition-all duration-500 group-hover:bg-transparent group-hover:text-[9px] xl:group-hover:text-[12px]">
+									Párty
+								</div>
+							</div>
+
+							<h6
+								class="text-[#2F3C4A] text-[13px] md:text-sm xl:text-base 2xl:text-[18px] font-extrabold mb-[6px] uppercase group-hover:text-[#1D71C9] transition-all duration-500 group-hover:mb-0">
+								Břink! V katakombách</h6>
+							<p
+								class="text-[11px] xl:text-[13px] font-semibold text-[#8A98A8] mb-1.5 xl:mb-2.5 transition-all duration-500 group-hover:mb-1 xl:group-hover:mb-1.5">
+								22. 6. 2024</p>
+							<p
+								class="text-[13px] md:text-sm xl:text-base leading-[25px] text-[#2F3C4A] line-clamp-3 font-light transition-all duration-500 group-hover:leading-[23px]">
+								Břink! V katakombách je desková hra, ve které se hráči v roli zlodějů vydají do kobek. Jejich cílem je
+								naloupit co největší lup, nicméně musí si dát pozor, aby nenadělali příliš hluku a nedopadla je dračice!
+								Hra navazuje na původní hru Břink!, nicméně je plně samostatně hratelná a kombinovatelná
+							</p>
+						</div>
+					</a>
+					<a href="#" class="card p-3 xl:p-[15px] bg-white group">
+						<div
+							class="relative z-0 h-[290px] md:h-[290px] xl:h-[360px] 2xl:h-[400px] overflow-hidden group-hover:rotate-[5deg] transition-all duration-500 cursor-pointer group-hover:scale-95">
+							<img src="assets/images/card6.png" alt=""
+								class="w-full h-full relative z-10 group-hover:blur-sm transition-all duration-500">
+							<div
+								class="absolute w-full h-full top-0 left-0 opacity-0 bg-[#1d70c985] z-20 group-hover:opacity-100 transition-all duration-500">
+							</div>
+							<img src="assets/images/icons/card-search-icon.svg" alt=""
+								class="absolute rotate-45 top-[110%] left-[50%] transition-all duration-500 group-hover:top-[50%] group-hover:rotate-0 group-hover:translate-x-[-50%] group-hover:translate-y-[-50%] z-30 w-[55px] xl:w-[78px] h-auto">
+						</div>
+						<!-- card header end -->
+						<div
+							class="pt-3 md:pt-3.5 xl:pt-[18px] pb-[18px] md:pb-[22px] xl:pb-[27px] px-2.5 md:px-3 xl:px-[20px] group-hover:translate-y-[-25px] transition-all duration-500">
+							<div class="flex gap-1 xl:gap-2.5 flex-wrap group-hover:gap-x-[2px] xl:group-hover:gap-2">
+								<div
+									class="text-white text-[8px] xl:text-[10px] font-extrabold bg-[#1D71C9] px-2.5 xl:px-[15px] py-1.5 xl:py-[9px] rounded-[40px] uppercase relative flex items-center w-fit leading-[1] mb-[13px] group-hover:translate-y-[-45px] xl:group-hover:translate-y-[-75px] transition-all duration-500 group-hover:bg-transparent group-hover:text-[9px] xl:group-hover:text-[12px]">
+									Rodinné
+								</div>
+								<div
+									class="text-white text-[8px] xl:text-[10px] font-extrabold bg-[#1D71C9] px-2.5 xl:px-[15px] py-1.5 xl:py-[9px] rounded-[40px] uppercase relative flex items-center w-fit leading-[1] mb-[13px] group-hover:translate-y-[-45px] xl:group-hover:translate-y-[-75px] transition-all duration-500 group-hover:bg-transparent group-hover:text-[9px] xl:group-hover:text-[12px]">
+									Pro náročné
+								</div>
+								<div
+									class="text-white text-[8px] xl:text-[10px] font-extrabold bg-[#1D71C9] px-2.5 xl:px-[15px] py-1.5 xl:py-[9px] rounded-[40px] uppercase relative flex items-center w-fit leading-[1] mb-[13px] group-hover:translate-y-[-45px] xl:group-hover:translate-y-[-75px] transition-all duration-500 group-hover:bg-transparent group-hover:text-[9px] xl:group-hover:text-[12px]">
+									Párty
+								</div>
+							</div>
+
+							<h6
+								class="text-[#2F3C4A] text-[13px] md:text-sm xl:text-base 2xl:text-[18px] font-extrabold mb-[6px] uppercase group-hover:text-[#1D71C9] transition-all duration-500 group-hover:mb-0">
+								Břink! V katakombách</h6>
+							<p
+								class="text-[11px] xl:text-[13px] font-semibold text-[#8A98A8] mb-1.5 xl:mb-2.5 transition-all duration-500 group-hover:mb-1 xl:group-hover:mb-1.5">
+								22. 6. 2024</p>
+							<p
+								class="text-[13px] md:text-sm xl:text-base leading-[25px] text-[#2F3C4A] line-clamp-3 font-light transition-all duration-500 group-hover:leading-[23px]">
+								Břink! V katakombách je desková hra, ve které se hráči v roli zlodějů vydají do kobek. Jejich cílem je
+								naloupit co největší lup, nicméně musí si dát pozor, aby nenadělali příliš hluku a nedopadla je dračice!
+								Hra navazuje na původní hru Břink!, nicméně je plně samostatně hratelná a kombinovatelná
+							</p>
+						</div>
+					</a>
+					<a href="#" class="card p-3 xl:p-[15px] bg-white group">
+						<div
+							class="relative z-0 h-[290px] md:h-[290px] xl:h-[360px] 2xl:h-[400px] overflow-hidden group-hover:rotate-[5deg] transition-all duration-500 cursor-pointer group-hover:scale-95">
+							<img src="assets/images/card7.png" alt=""
+								class="w-full h-full relative z-10 group-hover:blur-sm transition-all duration-500">
+							<div
+								class="absolute w-full h-full top-0 left-0 opacity-0 bg-[#1d70c985] z-20 group-hover:opacity-100 transition-all duration-500">
+							</div>
+							<img src="assets/images/icons/card-search-icon.svg" alt=""
+								class="absolute rotate-45 top-[110%] left-[50%] transition-all duration-500 group-hover:top-[50%] group-hover:rotate-0 group-hover:translate-x-[-50%] group-hover:translate-y-[-50%] z-30 w-[55px] xl:w-[78px] h-auto">
+						</div>
+						<!-- card header end -->
+						<div
+							class="pt-3 md:pt-3.5 xl:pt-[18px] pb-[18px] md:pb-[22px] xl:pb-[27px] px-2.5 md:px-3 xl:px-[20px] group-hover:translate-y-[-25px] transition-all duration-500">
+							<div class="flex gap-1 xl:gap-2.5 flex-wrap group-hover:gap-x-[2px] xl:group-hover:gap-2">
+								<div
+									class="text-white text-[8px] xl:text-[10px] font-extrabold bg-[#1D71C9] px-2.5 xl:px-[15px] py-1.5 xl:py-[9px] rounded-[40px] uppercase relative flex items-center w-fit leading-[1] mb-[13px] group-hover:translate-y-[-45px] xl:group-hover:translate-y-[-75px] transition-all duration-500 group-hover:bg-transparent group-hover:text-[9px] xl:group-hover:text-[12px]">
+									Rodinné
+								</div>
+								<div
+									class="text-white text-[8px] xl:text-[10px] font-extrabold bg-[#1D71C9] px-2.5 xl:px-[15px] py-1.5 xl:py-[9px] rounded-[40px] uppercase relative flex items-center w-fit leading-[1] mb-[13px] group-hover:translate-y-[-45px] xl:group-hover:translate-y-[-75px] transition-all duration-500 group-hover:bg-transparent group-hover:text-[9px] xl:group-hover:text-[12px]">
+									Pro náročné
+								</div>
+								<div
+									class="text-white text-[8px] xl:text-[10px] font-extrabold bg-[#1D71C9] px-2.5 xl:px-[15px] py-1.5 xl:py-[9px] rounded-[40px] uppercase relative flex items-center w-fit leading-[1] mb-[13px] group-hover:translate-y-[-45px] xl:group-hover:translate-y-[-75px] transition-all duration-500 group-hover:bg-transparent group-hover:text-[9px] xl:group-hover:text-[12px]">
+									Párty
+								</div>
+							</div>
+
+							<h6
+								class="text-[#2F3C4A] text-[13px] md:text-sm xl:text-base 2xl:text-[18px] font-extrabold mb-[6px] uppercase group-hover:text-[#1D71C9] transition-all duration-500 group-hover:mb-0">
+								Břink! V katakombách</h6>
+							<p
+								class="text-[11px] xl:text-[13px] font-semibold text-[#8A98A8] mb-1.5 xl:mb-2.5 transition-all duration-500 group-hover:mb-1 xl:group-hover:mb-1.5">
+								22. 6. 2024</p>
+							<p
+								class="text-[13px] md:text-sm xl:text-base leading-[25px] text-[#2F3C4A] line-clamp-3 font-light transition-all duration-500 group-hover:leading-[23px]">
+								Břink! V katakombách je desková hra, ve které se hráči v roli zlodějů vydají do kobek. Jejich cílem je
+								naloupit co největší lup, nicméně musí si dát pozor, aby nenadělali příliš hluku a nedopadla je dračice!
+								Hra navazuje na původní hru Břink!, nicméně je plně samostatně hratelná a kombinovatelná
+							</p>
+						</div>
+					</a>
+					<a href="#" class="card p-3 xl:p-[15px] bg-white group">
+						<div
+							class="relative z-0 h-[290px] md:h-[290px] xl:h-[360px] 2xl:h-[400px] overflow-hidden group-hover:rotate-[5deg] transition-all duration-500 cursor-pointer group-hover:scale-95">
+							<img src="assets/images/card8.png" alt=""
+								class="w-full h-full relative z-10 group-hover:blur-sm transition-all duration-500">
+							<div
+								class="absolute w-full h-full top-0 left-0 opacity-0 bg-[#1d70c985] z-20 group-hover:opacity-100 transition-all duration-500">
+							</div>
+							<img src="assets/images/icons/card-search-icon.svg" alt=""
+								class="absolute rotate-45 top-[110%] left-[50%] transition-all duration-500 group-hover:top-[50%] group-hover:rotate-0 group-hover:translate-x-[-50%] group-hover:translate-y-[-50%] z-30 w-[55px] xl:w-[78px] h-auto">
+						</div>
+						<!-- card header end -->
+						<div
+							class="pt-3 md:pt-3.5 xl:pt-[18px] pb-[18px] md:pb-[22px] xl:pb-[27px] px-2.5 md:px-3 xl:px-[20px] group-hover:translate-y-[-25px] transition-all duration-500">
+							<div class="flex gap-1 xl:gap-2.5 flex-wrap group-hover:gap-x-[2px] xl:group-hover:gap-2">
+								<div
+									class="text-white text-[8px] xl:text-[10px] font-extrabold bg-[#1D71C9] px-2.5 xl:px-[15px] py-1.5 xl:py-[9px] rounded-[40px] uppercase relative flex items-center w-fit leading-[1] mb-[13px] group-hover:translate-y-[-45px] xl:group-hover:translate-y-[-75px] transition-all duration-500 group-hover:bg-transparent group-hover:text-[9px] xl:group-hover:text-[12px]">
+									Rodinné
+								</div>
+								<div
+									class="text-white text-[8px] xl:text-[10px] font-extrabold bg-[#1D71C9] px-2.5 xl:px-[15px] py-1.5 xl:py-[9px] rounded-[40px] uppercase relative flex items-center w-fit leading-[1] mb-[13px] group-hover:translate-y-[-45px] xl:group-hover:translate-y-[-75px] transition-all duration-500 group-hover:bg-transparent group-hover:text-[9px] xl:group-hover:text-[12px]">
+									Pro náročné
+								</div>
+								<div
+									class="text-white text-[8px] xl:text-[10px] font-extrabold bg-[#1D71C9] px-2.5 xl:px-[15px] py-1.5 xl:py-[9px] rounded-[40px] uppercase relative flex items-center w-fit leading-[1] mb-[13px] group-hover:translate-y-[-45px] xl:group-hover:translate-y-[-75px] transition-all duration-500 group-hover:bg-transparent group-hover:text-[9px] xl:group-hover:text-[12px]">
+									Párty
+								</div>
+							</div>
+
+							<h6
+								class="text-[#2F3C4A] text-[13px] md:text-sm xl:text-base 2xl:text-[18px] font-extrabold mb-[6px] uppercase group-hover:text-[#1D71C9] transition-all duration-500 group-hover:mb-0">
+								Břink! V katakombách</h6>
+							<p
+								class="text-[11px] xl:text-[13px] font-semibold text-[#8A98A8] mb-1.5 xl:mb-2.5 transition-all duration-500 group-hover:mb-1 xl:group-hover:mb-1.5">
+								22. 6. 2024</p>
+							<p
+								class="text-[13px] md:text-sm xl:text-base leading-[25px] text-[#2F3C4A] line-clamp-3 font-light transition-all duration-500 group-hover:leading-[23px]">
+								Břink! V katakombách je desková hra, ve které se hráči v roli zlodějů vydají do kobek. Jejich cílem je
+								naloupit co největší lup, nicméně musí si dát pozor, aby nenadělali příliš hluku a nedopadla je dračice!
+								Hra navazuje na původní hru Břink!, nicméně je plně samostatně hratelná a kombinovatelná
+							</p>
+						</div>
+					</a>
+					<a href="#" class="card p-3 xl:p-[15px] bg-white group">
+						<div
+							class="relative z-0 h-[290px] md:h-[290px] xl:h-[360px] 2xl:h-[400px] overflow-hidden group-hover:rotate-[5deg] transition-all duration-500 cursor-pointer group-hover:scale-95">
+							<img src="assets/images/card9.png" alt=""
+								class="w-full h-full relative z-10 group-hover:blur-sm transition-all duration-500">
+							<div
+								class="absolute w-full h-full top-0 left-0 opacity-0 bg-[#1d70c985] z-20 group-hover:opacity-100 transition-all duration-500">
+							</div>
+							<img src="assets/images/icons/card-search-icon.svg" alt=""
+								class="absolute rotate-45 top-[110%] left-[50%] transition-all duration-500 group-hover:top-[50%] group-hover:rotate-0 group-hover:translate-x-[-50%] group-hover:translate-y-[-50%] z-30 w-[55px] xl:w-[78px] h-auto">
+						</div>
+						<!-- card header end -->
+						<div
+							class="pt-3 md:pt-3.5 xl:pt-[18px] pb-[18px] md:pb-[22px] xl:pb-[27px] px-2.5 md:px-3 xl:px-[20px] group-hover:translate-y-[-25px] transition-all duration-500">
+							<div class="flex gap-1 xl:gap-2.5 flex-wrap group-hover:gap-x-[2px] xl:group-hover:gap-2">
+								<div
+									class="text-white text-[8px] xl:text-[10px] font-extrabold bg-[#1D71C9] px-2.5 xl:px-[15px] py-1.5 xl:py-[9px] rounded-[40px] uppercase relative flex items-center w-fit leading-[1] mb-[13px] group-hover:translate-y-[-45px] xl:group-hover:translate-y-[-75px] transition-all duration-500 group-hover:bg-transparent group-hover:text-[9px] xl:group-hover:text-[12px]">
+									Rodinné
+								</div>
+								<div
+									class="text-white text-[8px] xl:text-[10px] font-extrabold bg-[#1D71C9] px-2.5 xl:px-[15px] py-1.5 xl:py-[9px] rounded-[40px] uppercase relative flex items-center w-fit leading-[1] mb-[13px] group-hover:translate-y-[-45px] xl:group-hover:translate-y-[-75px] transition-all duration-500 group-hover:bg-transparent group-hover:text-[9px] xl:group-hover:text-[12px]">
+									Pro náročné
+								</div>
+								<div
+									class="text-white text-[8px] xl:text-[10px] font-extrabold bg-[#1D71C9] px-2.5 xl:px-[15px] py-1.5 xl:py-[9px] rounded-[40px] uppercase relative flex items-center w-fit leading-[1] mb-[13px] group-hover:translate-y-[-45px] xl:group-hover:translate-y-[-75px] transition-all duration-500 group-hover:bg-transparent group-hover:text-[9px] xl:group-hover:text-[12px]">
+									Párty
+								</div>
+							</div>
+
+							<h6
+								class="text-[#2F3C4A] text-[13px] md:text-sm xl:text-base 2xl:text-[18px] font-extrabold mb-[6px] uppercase group-hover:text-[#1D71C9] transition-all duration-500 group-hover:mb-0">
+								Břink! V katakombách</h6>
+							<p
+								class="text-[11px] xl:text-[13px] font-semibold text-[#8A98A8] mb-1.5 xl:mb-2.5 transition-all duration-500 group-hover:mb-1 xl:group-hover:mb-1.5">
+								22. 6. 2024</p>
+							<p
+								class="text-[13px] md:text-sm xl:text-base leading-[25px] text-[#2F3C4A] line-clamp-3 font-light transition-all duration-500 group-hover:leading-[23px]">
+								Břink! V katakombách je desková hra, ve které se hráči v roli zlodějů vydají do kobek. Jejich cílem je
+								naloupit co největší lup, nicméně musí si dát pozor, aby nenadělali příliš hluku a nedopadla je dračice!
+								Hra navazuje na původní hru Břink!, nicméně je plně samostatně hratelná a kombinovatelná
+							</p>
+						</div>
+					</a>
+				</div>
+				<a href="#"
+					class="flex items-center text-[13px] xl:text-sm justify-center w-fit mx-auto rounded-[100px] shadow2 px-[24px] xl:px-[29px] py-[15px] xl:py-[18px] bg-[#1D71C9] text-white uppercase relative overflow-hidden hover:shadow-none gap-x-1.5 group">
+					Dozvědět
+					se více
+					<i
+						class="fa-solid fa-chevron-right btnIcn rotate-[40deg] translate-x-[40px] translate-y-[60px] transition-all duration-300 group-hover:rotate-0 group-hover:translate-x-0 group-hover:translate-y-[0px]"></i>
+				</a>
+			</div>
+		</section>
+		<footer class=" footer relative z-0">
+			<img src="assets/images/footer-icons-bg.svg" alt="" class="absolute top-0 right-0 z-10 w-[150px]">
+			<div class="footer-bg pt-[100px] lg:pt-[110px] 2xl:pt-[135px] pb-5 md:pb-[26px] relative z-20">
+				<div class="container">
+					<h2
+						class="text-center text-[#C4CCD4] uppercase mb-5 text-base md:text-lg xl:text-xl font-bold font-inknut-antiqua">
+						Kontakty</h2>
+					<ul class="flex items-center justify-center gap-x-5 xl:gap-x-[30px] mb-6">
+						<li class="flex items-center gap-x-1.5">
+							<img src="assets/images/icons/phone.svg" alt="" class="w-4">
+							<a href="tel:+3014749625" class="text-[13px] xl:text-[15px] text-white font-medium underline">
+								<span class="font-normal">+420 </span> 774 057 570
+							</a>
+						</li>
+						<li class="h-7 w-[1px] bg-[#566576]"></li>
+						<li class="flex items-center gap-x-1.5">
+							<img src="assets/images/icons/mail.svg" alt="" class="w-[13px]">
+							<a href="tel:+3014749625" class="text-[13px] xl:text-[15px] text-white font-medium underline">
+								obchod@rexhry.cz
+							</a>
+						</li>
+					</ul>
+					<h6 class="uppercase text-sm xl:text-base text-[#C4CCD4] mb-[24px] text-center font-bold">Najdete nás i na
+						sociálních sítích
+					</h6>
+					<ul class="flex items-center gap-x-6 xl:gap-x-[30px] justify-center mb-8 xl:mb-[55px] 2xl:mb-[85px]">
+						<li>
+							<a href="#">
+								<img src="assets/images/icons/youtube2.svg" alt="" class="w-[80px] h-auto">
+							</a>
+						</li>
+						<li class="h-7 w-[1px] bg-[#566576]"></li>
+						<li>
+							<a href="#">
+								<img src="assets/images/icons/facebook2.svg" alt="" class="w-[80px] h-auto">
+							</a>
+						</li>
+						<li class="h-7 w-[1px] bg-[#566576]"></li>
+						<li>
+							<a href="#">
+								<img src="assets/images/icons/instagram2.svg" alt="" class="w-[80px] h-auto">
+							</a>
+						</li>
+					</ul>
+					<ul class="flex items-center gap-x-1.5 justify-center">
+						<li>
+							<a href="#" class="text-[13px] font-light text-[#8A98A8]">Obchodní podmínky</a>
+						</li>
+						<li class="text-[13px] font-light text-[#8A98A8]">|</li>
+						<li>
+							<a href="#" class="text-[13px] font-light text-[#8A98A8]">Reklamace</a>
+						</li>
+					</ul>
+					<ul class="flex items-center gap-x-1.5 justify-center mb-2.5">
+						<li class="text-[13px] font-light text-[#8A98A8]">© 2024 Rexhry|</li>
+						<li class="text-[13px] font-light text-[#8A98A8]">|</li>
+						<li class="text-[13px] font-light text-[#8A98A8]"> Vytvoril ExpertDev</li>
+						<li class="text-[13px] font-light text-[#8A98A8]">Všechna práva vyhrazena</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- body-wrapper end -->
+
+	<script src="assets/js/jquery.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>
