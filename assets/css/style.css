@@ -45,7 +45,12 @@ html {
 	margin: 0 auto;
 	padding: 0 15px;
 }
-
+.navlink.active::after{
+	bottom: -7px;
+}
+.navlink.active{
+	color: #1D71C9;
+}
 .shadow1 {
 	box-shadow: 0 10px 24px 0 #00000080 !important;
 }
