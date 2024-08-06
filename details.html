@@ -1,0 +1,998 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Details</title>
+	<!-- Favicons -->
+	<link href="assets/images/favicone.png" rel="icon">
+	<!-- font aweasome -->
+	<link rel="stylesheet" href="dist/fontawesome-6.6.0/css/all.min.css">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=League+Spartan:wght@100..900&display=swap"
+		rel="stylesheet">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<!-- Main Stylesheet File -->
+	<link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="body-wrapper relative z-0">
+		<div id="sidebar"
+			class="fixed top-0 bottom-0 right-0 bg-white text-color-primary w-[310px] sm:w-[320px] z-[999] h-screen translate-x-full transition-all duration-500 ease-in-out lg:hidden">
+			<div class="flex items-center justify-between py-4 px-4 border-b border-[#2F3C4A]">
+				<div class="flex items-center gap-x-2">
+					<img src="assets/images/logo.svg" alt="" class="w-14 h-auto">
+					<img src="assets/images/logo-text.svg" alt="" class="w-20">
+				</div>
+				<div
+					class="closeBTN flex justify-center items-center text-color-primary text-xl w-[40px] h-[40px] border-2 border-[#2F3C4A] rounded-[50%] cursor-pointer">
+					<i class="fa-solid fa-xmark"></i>
+				</div>
+			</div>
+			<div class="border border-[#C4CCD4] flex items-center bg-[#E2E5E9] p-[3px] gap-x-1">
+				<input type="text" placeholder="Vyhledat hru..."
+					class="bg-[#E2E5E9] w-[calc(100%-30px)] text-color-quaternary pl-[10px] text-sm border-none outline-none">
+				<button class="w-[30px] h-[30px] bg-[#C4CCD4] flex items-center justify-center">
+					<img src="assets/images/icons/search.svg" alt="" class="w-[18px]">
+				</button>
+			</div>
+			<ul class="px-4 pt-6 pb-4">
+				<li class="py-2">
+					<a href="catalog.html" class="uppercase text-base font-semibold text-color-primary">Katalog her</a>
+				</li>
+				<li class="py-2">
+					<a href="up-comming.html" class="uppercase text-base font-semibold text-color-primary">Připravujeme</a>
+				</li>
+				<li class="py-2">
+					<a href="news.html" class="uppercase text-base font-semibold text-color-primary">Aktuality</a>
+				</li>
+				<li class="py-2">
+					<a href="about-us.html" class="uppercase text-base font-semibold text-color-primary">O nás</a>
+				</li>
+				<li class="py-2">
+					<a href="address.html" class="uppercase text-base font-semibold text-color-primary">Pro obchodníky</a>
+				</li>
+				<li class="py-2">
+					<a href="complaint.html" class="uppercase text-base font-semibold text-color-primary">Reklamace</a>
+				</li>
+				<li class="py-2">
+					<a href="contact.html" class="uppercase text-base font-semibold text-color-primary">Kontakt</a>
+				</li>
+			</ul>
+			<div class="absolute w-full left-0 bottom-0 border-t border-[#2F3C4A] p-4">
+				<ul class="flex items-center gap-x-4 mb-3 justify-center">
+					<li class="flex items-center gap-x-1">
+						<img src="assets/images/icons/phone.svg" alt="" class="w-4">
+						<a href="tel:+923014749625" class="text-[12px] 2xl:text-sm text-color-fifth font-bold underline">
+							<span class="font-normal">+420 </span> 774 057 570
+						</a>
+					</li>
+					<li class="flex items-center gap-x-1">
+						<img src="assets/images/icons/mail.svg" alt="" class="w-[13px]">
+						<a href="mailto:naqashahsan@gmail.com" class="text-[12px] 2xl:text-sm text-color-fifth font-bold underline">
+							obchod@rexhry.cz
+						</a>
+					</li>
+				</ul>
+				<ul class="flex items-center gap-x-3 xl:gap-x-4 justify-center">
+					<li>
+						<a href="#" class="flex items-center justify-center">
+							<img src="assets/images/icons/youtube.svg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#" class="flex items-center justify-center">
+							<img src="assets/images/icons/facebook.svg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#" class="flex items-center justify-center">
+							<img src="assets/images/icons/instagram.svg" alt="">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<header class="absolute top-0 left-0 right-0 z-50">
+			<nav
+				class="w-[calc(100%-20px)] sm:max-w-[580px] md:max-w-[720px] lg:max-w-[980px] xl:max-w-[1220px] 2xl:max-w-[1326px] mx-auto bg-white pt-[6px]  shadow1 pl-[80px] lg:pl-[97px] xl:pl-[103px] 2xl:pl-[120px] pr-2.5 relative">
+				<div class="flex items-center justify-between">
+					<div class="flex items-center">
+						<a href="/"
+							class="flex justify-center items-center w-fit pt-3 lg:pt-[19px] xl:pt-[22px] 2xl:pt-[27px] pb-3 lg:pb-[18px] xl:pb-[20px] 2xl:pb-[25px] px-3 lg:px-3.5 xl:px-[18px] 2xl:px-[21px] absolute top-[-2px] lg:top-[-5px] 2xl:top-[-10px] bg-white left-[-3px] sm:left-[-6px] rotate-[5deg]">
+							<img src="assets/images/logo.svg" alt=""
+								class="w-[55px] lg:w-[70px] 2xl:w-[80px] xl:h-[70px] 2xl:h-[80px]">
+						</a>
+						<a href="/" class="block">
+							<img src="assets/images/logo-text.svg"
+								class="w-[80px] lg:w-[90px] xl:w-[100px] 2xl:w-[124px] h-auto mb-1.5" alt="">
+							<p class="text-color-quaternary text-sm xl:text-base 2xl:text-[18px]">Královsky se bavte</p>
+						</a>
+					</div>
+					<div class="navRight hidden lg:block">
+						<div
+							class="flex items-center gap-x-7 xl:gap-x-10 2xl:gap-x-16  mb-3.5 2xl:mb-[17px] justify-end pr-2.5 xl:pr-4">
+							<div class="border border-[#C4CCD4] flex items-center bg-[#E2E5E9] p-[3px] gap-x-1">
+								<input type="text" placeholder="Vyhledat hru..."
+									class="bg-[#E2E5E9] w-[225px] text-color-quaternary pl-[10px] text-sm border-none outline-none">
+								<button class="w-[30px] h-[30px] bg-[#C4CCD4] flex items-center justify-center">
+									<img src="assets/images/icons/search.svg" alt="" class="w-[18px]">
+								</button>
+							</div>
+							<div class="flex items-center gap-x-6">
+								<ul class="flex items-center gap-x-4">
+									<li class="flex items-center gap-x-1">
+										<img src="assets/images/icons/phone.svg" alt="" class="w-4">
+										<a href="tel:+923014749625" class="text-[12px] 2xl:text-sm text-color-fifth font-bold underline">
+											<span class="font-normal">+420 </span> 774 057 570
+										</a>
+									</li>
+									<li class="flex items-center gap-x-1">
+										<img src="assets/images/icons/mail.svg" alt="" class="w-[13px]">
+										<a href="mailto:naqashahsan@gmail.com"
+											class="text-[12px] 2xl:text-sm text-color-fifth font-bold underline">
+											obchod@rexhry.cz
+										</a>
+									</li>
+								</ul>
+								<ul class="flex items-center gap-x-3 xl:gap-x-4">
+									<li>
+										<a href="#" class="flex items-center justify-center">
+											<img src="assets/images/icons/youtube.svg" alt="">
+										</a>
+									</li>
+									<li>
+										<a href="#" class="flex items-center justify-center">
+											<img src="assets/images/icons/facebook.svg" alt="">
+										</a>
+									</li>
+									<li>
+										<a href="#" class="flex items-center justify-center">
+											<img src="assets/images/icons/instagram.svg" alt="">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- nav to bar end -->
+						<div>
+							<ul class="flex items-center">
+								<li>
+									<a href="catalog.html"
+										class=" navlink flex justify-center text-[13px] 2xl:text-sm text-color-primary font-black px-2 xl:px-4 pt-1 2xl:pt-2 pb-3.5 xl:pb-4 2xl:pb-6 hover:text-[#1D71C9] uppercase relative overflow-hidden border-r border-[#C4CCD4] after:content-[''] after:absolute after:bottom-[-15px] after:left-[calc(50%-7.5px)] after:w-[15px] after:h-[15px] after:bg-white after:border-[3px] after:border-[#1D71C9] after:rounded-[50%] after:transition-all hover:after:bottom-[-7px]">
+										Katalog her
+									</a>
+								</li>
+								<li>
+									<a href="up-comming.html"
+										class=" navlink flex justify-center text-[13px] 2xl:text-sm text-color-primary font-black px-2 xl:px-4 pt-1 2xl:pt-2 pb-3.5 xl:pb-4 2xl:pb-6 hover:text-[#1D71C9] uppercase relative overflow-hidden border-r border-[#C4CCD4] after:content-[''] after:absolute after:bottom-[-15px] after:left-[calc(50%-7.5px)] after:w-[15px] after:h-[15px] after:bg-white after:border-[3px] after:border-[#1D71C9] after:rounded-[50%] after:transition-all hover:after:bottom-[-7px]">
+										Připravujeme
+									</a>
+								</li>
+								<li>
+									<a href="news.html"
+										class=" navlink flex justify-center text-[13px] 2xl:text-sm text-color-primary font-black px-2 xl:px-4 pt-1 2xl:pt-2 pb-3.5 xl:pb-4 2xl:pb-6 hover:text-[#1D71C9] uppercase relative overflow-hidden border-r border-[#C4CCD4] after:content-[''] after:absolute after:bottom-[-15px] after:left-[calc(50%-7.5px)] after:w-[15px] after:h-[15px] after:bg-white after:border-[3px] after:border-[#1D71C9] after:rounded-[50%] after:transition-all hover:after:bottom-[-7px]">
+										Aktuality
+									</a>
+								</li>
+								<li>
+									<a href="about-us.html"
+										class=" navlink flex justify-center text-[13px] 2xl:text-sm text-color-primary font-black px-2 xl:px-4 pt-1 2xl:pt-2 pb-3.5 xl:pb-4 2xl:pb-6 hover:text-[#1D71C9] uppercase relative overflow-hidden border-r border-[#C4CCD4] after:content-[''] after:absolute after:bottom-[-15px] after:left-[calc(50%-7.5px)] after:w-[15px] after:h-[15px] after:bg-white after:border-[3px] after:border-[#1D71C9] after:rounded-[50%] after:transition-all hover:after:bottom-[-7px]">
+										O nás
+									</a>
+								</li>
+								<li>
+									<a href="address.html"
+										class=" navlink flex justify-center text-[13px] 2xl:text-sm text-color-primary font-black px-2 xl:px-4 pt-1 2xl:pt-2 pb-3.5 xl:pb-4 2xl:pb-6 hover:text-[#1D71C9] uppercase relative overflow-hidden border-r border-[#C4CCD4] after:content-[''] after:absolute after:bottom-[-15px] after:left-[calc(50%-7.5px)] after:w-[15px] after:h-[15px] after:bg-white after:border-[3px] after:border-[#1D71C9] after:rounded-[50%] after:transition-all hover:after:bottom-[-7px]">
+										Pro obchodníky
+									</a>
+								</li>
+								<li>
+									<a href="complaint.html"
+										class=" navlink flex justify-center text-[13px] 2xl:text-sm text-color-primary font-black px-2 xl:px-4 pt-1 2xl:pt-2 pb-3.5 xl:pb-4 2xl:pb-6 hover:text-[#1D71C9] uppercase relative overflow-hidden border-r border-[#C4CCD4] after:content-[''] after:absolute after:bottom-[-15px] after:left-[calc(50%-7.5px)] after:w-[15px] after:h-[15px] after:bg-white after:border-[3px] after:border-[#1D71C9] after:rounded-[50%] after:transition-all hover:after:bottom-[-7px]">
+										Reklamace
+									</a>
+								</li>
+								<li>
+									<a href="contact.html"
+										class=" navlink flex justify-center text-[13px] 2xl:text-sm text-color-primary font-black px-2 xl:px-4 pt-1 2xl:pt-2 pb-3.5 xl:pb-4 2xl:pb-6 hover:text-[#1D71C9] uppercase relative overflow-hidden border-r border-[#C4CCD4] after:content-[''] after:absolute after:bottom-[-15px] after:left-[calc(50%-7.5px)] after:w-[15px] after:h-[15px] after:bg-white after:border-[3px] after:border-[#1D71C9] after:rounded-[50%] after:transition-all hover:after:bottom-[-7px]">
+										Kontakt
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="navbtn flex justify-center text-xl py-5 px-3 items-center lg:hidden cursor-pointer">
+						<i class="fa-solid fa-bars"></i>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- header end -->
+		<section class="pt-28 sm:pt-40 lg:pt-48 subBanner--details relative z-0 pb-11 md:pb-16 xl:pb-24">
+			<img src="assets/images/details/details-bg.svg" alt=""
+				class="absolute top-0 right-0 z-10 w-full h-auto min-h-[320px]">
+			<img src="assets/images/details-bg-icon.svg" alt="" class="absolute top-0 right-0 z-20 w-[150px]">
+			<div class="container">
+				<div
+					class="grid grid-cols-1 gap-y-6 sm:gap-y-10 lg:grid-cols-2 gap-x-8 xl:gap-x-14 relative z-30 border-b border-[#E2E5E9] pb-6 md:pb-10 mb-6 md:mb-10">
+					<div>
+						<div class="w-full h-[360px] sm:h-[440px] lg:h-[440px] xl:h-[500px] 2xl:h-[600px] detsilBox active" id="a1">
+							<img src="assets/images/details/details-image1.png" alt="" class="w-full h-full">
+						</div>
+						<div class="w-full h-[360px] sm:h-[440px] lg:h-[440px] xl:h-[500px] 2xl:h-[600px] detsilBox" id="a2">
+							<img src="assets/images/details/details-image2.png" alt="" class="w-full h-full">
+						</div>
+						<div class="w-full h-[360px] sm:h-[440px] lg:h-[440px] xl:h-[500px] 2xl:h-[600px] detsilBox" id="a3">
+							<img src="assets/images/details/details-image1.png" alt="" class="w-full h-full">
+						</div>
+						<div class="w-full h-[360px] sm:h-[440px] lg:h-[440px] xl:h-[500px] 2xl:h-[600px] detsilBox" id="a4">
+							<img src="assets/images/details/details-image2.png" alt="" class="w-full h-full">
+						</div>
+						<div class="w-full h-[360px] sm:h-[440px] lg:h-[440px] xl:h-[500px] 2xl:h-[600px] detsilBox" id="a5">
+							<img src="assets/images/details/details-image1.png" alt="" class="w-full h-full">
+						</div>
+						<div class="w-full h-[360px] sm:h-[440px] lg:h-[440px] xl:h-[500px] 2xl:h-[600px] detsilBox" id="a6">
+							<img src="assets/images/details/details-image2.png" alt="" class="w-full h-full">
+						</div>
+						<ul class="flex items-center detailsItemslist pb-3">
+							<li>
+								<a link="#a1"
+									class="w-[70px] h-[70px] md:w-[90px] md:h-[90px] xl:w-[120px] xl:h-[120px] detsilBox__link flex justify-center items-center group cursor-pointer relative z-0 overflow-hidden">
+									<img src="assets/images/details/details-icon2.png" alt=""
+										class="w-full h-full relative z-10 group-hover:blur-sm transition-all duration-500">
+									<div
+										class="absolute w-full h-full top-0 left-0 opacity-0 bg-[#1d70c985] z-20 group-hover:opacity-100 transition-all duration-500">
+									</div>
+									<img src="assets/images/icons/card-search-icon.svg" alt=""
+										class="absolute rotate-45 top-[110%] left-[50%] transition-all duration-500 group-hover:top-[50%] group-hover:rotate-0 group-hover:translate-x-[-50%] group-hover:translate-y-[-50%] z-30 w-6 sm:w-9 h-auto">
+								</a>
+							</li>
+							<li>
+								<a link="#a2"
+									class="w-[70px] h-[70px] md:w-[90px] md:h-[90px] xl:w-[120px] xl:h-[120px] detsilBox__link flex justify-center items-center group cursor-pointer relative z-0 overflow-hidden">
+									<img src="assets/images/details/details-icon3.png" alt=""
+										class="w-full h-full relative z-10 group-hover:blur-sm transition-all duration-500">
+									<div
+										class="absolute w-full h-full top-0 left-0 opacity-0 bg-[#1d70c985] z-20 group-hover:opacity-100 transition-all duration-500">
+									</div>
+									<img src="assets/images/icons/card-search-icon.svg" alt=""
+										class="absolute rotate-45 top-[110%] left-[50%] transition-all duration-500 group-hover:top-[50%] group-hover:rotate-0 group-hover:translate-x-[-50%] group-hover:translate-y-[-50%] z-30 w-6 sm:w-9 h-auto">
+								</a>
+							</li>
+							<li>
+								<a link="#a3"
+									class="w-[70px] h-[70px] md:w-[90px] md:h-[90px] xl:w-[120px] xl:h-[120px] detsilBox__link flex justify-center items-center group cursor-pointer relative z-0 overflow-hidden">
+									<img src="assets/images/details/details-icon4.png" alt=""
+										class="w-full h-full relative z-10 group-hover:blur-sm transition-all duration-500">
+									<div
+										class="absolute w-full h-full top-0 left-0 opacity-0 bg-[#1d70c985] z-20 group-hover:opacity-100 transition-all duration-500">
+									</div>
+									<img src="assets/images/icons/card-search-icon.svg" alt=""
+										class="absolute rotate-45 top-[110%] left-[50%] transition-all duration-500 group-hover:top-[50%] group-hover:rotate-0 group-hover:translate-x-[-50%] group-hover:translate-y-[-50%] z-30 w-6 sm:w-9 h-auto">
+								</a>
+							</li>
+							<li>
+								<a link="#a4"
+									class="w-[70px] h-[70px] md:w-[90px] md:h-[90px] xl:w-[120px] xl:h-[120px] detsilBox__link flex justify-center items-center group cursor-pointer relative z-0 overflow-hidden">
+									<img src="assets/images/details/details-icon5.png" alt=""
+										class="w-full h-full relative z-10 group-hover:blur-sm transition-all duration-500">
+									<div
+										class="absolute w-full h-full top-0 left-0 opacity-0 bg-[#1d70c985] z-20 group-hover:opacity-100 transition-all duration-500">
+									</div>
+									<img src="assets/images/icons/card-search-icon.svg" alt=""
+										class="absolute rotate-45 top-[110%] left-[50%] transition-all duration-500 group-hover:top-[50%] group-hover:rotate-0 group-hover:translate-x-[-50%] group-hover:translate-y-[-50%] z-30 w-6 sm:w-9 h-auto">
+								</a>
+							</li>
+							<li>
+								<a link="#a5"
+									class="w-[70px] h-[70px] md:w-[90px] md:h-[90px] xl:w-[120px] xl:h-[120px] detsilBox__link flex justify-center items-center group cursor-pointer relative z-0 overflow-hidden">
+									<img src="assets/images/details/details-icon1.png" alt=""
+										class="w-full h-full relative z-10 group-hover:blur-sm transition-all duration-500">
+									<div
+										class="absolute w-full h-full top-0 left-0 opacity-0 bg-[#1d70c985] z-20 group-hover:opacity-100 transition-all duration-500">
+									</div>
+									<img src="assets/images/icons/card-search-icon.svg" alt=""
+										class="absolute rotate-45 top-[110%] left-[50%] transition-all duration-500 group-hover:top-[50%] group-hover:rotate-0 group-hover:translate-x-[-50%] group-hover:translate-y-[-50%] z-30 w-6 sm:w-9 h-auto">
+								</a>
+							</li>
+							<li>
+								<a link="#a6"
+									class="w-[70px] h-[70px] md:w-[90px] md:h-[90px] xl:w-[120px] xl:h-[120px] detsilBox__link flex justify-center items-center group cursor-pointer relative z-0 overflow-hidden">
+									<img src="assets/images/details/details-icon1.png" alt=""
+										class="w-full h-full relative z-10 group-hover:blur-sm transition-all duration-500">
+									<div
+										class="absolute w-full h-full top-0 left-0 opacity-0 bg-[#1d70c985] z-20 group-hover:opacity-100 transition-all duration-500">
+									</div>
+									<img src="assets/images/icons/card-search-icon.svg" alt=""
+										class="absolute rotate-45 top-[110%] left-[50%] transition-all duration-500 group-hover:top-[50%] group-hover:rotate-0 group-hover:translate-x-[-50%] group-hover:translate-y-[-50%] z-30 w-6 sm:w-9 h-auto">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- slider end -->
+					<div>
+						<h2
+							class="text-xl sm:text-2xl md:text-[28px] xl:text-4xl font-bold text-color-primary mb-4 font-inknut-antiqua leading-[1.3] uppercase">
+							Kacíř – kompletní herní sada + doplňky
+						</h2>
+						<div class="flex items-center gap-x-2 md:gap-x-3 xl:gap-x-5 mb-3 md:mb-5 xl:mb-7">
+							<div
+								class="text-white text-[10px] xl:text-xs font-extrabold bg-[#1D71C9] px-4 xl:px-5 py-2.5 xl:py-3 rounded-[40px] uppercase relative flex items-center w-fit leading-[1] transition-all duration-500">
+								Základní hra
+							</div>
+							<div
+								class="text-white text-[10px] xl:text-xs font-extrabold bg-[#1D71C9] px-4 xl:px-5 py-2.5 xl:py-3 rounded-[40px] uppercase relative flex items-center w-fit leading-[1] transition-all duration-500">
+								Rozšíření
+							</div>
+							<div
+								class="text-white text-[10px] xl:text-xs font-extrabold bg-[#1D71C9] px-4 xl:px-5 py-2.5 xl:py-3 rounded-[40px] uppercase relative flex items-center w-fit leading-[1] transition-all duration-500">
+								Doplňky
+							</div>
+						</div>
+						<!--  -->
+						<div class="flex items-center gap-x-2 md:gap-x-3 xl:gap-x-7">
+							<div class="flex items-center gap-x-2 py-3.5">
+								<img src="assets/images/icons/catalog/icon5.svg" alt="" class="w-5 h-5 xl:w-7 xl:h-7 object-contain">
+								<span class="text-color-quaternary text-color-quaternary text-xs lg:text-[15px] font-bold">1 – 4</span>
+							</div>
+							<div class="w-[1px] h-6 bg-[#C4CCD4]"></div>
+							<div class="flex items-center gap-x-2 py-3.5">
+								<img src="assets/images/icons/catalog/icon6.svg" alt="" class="w-5 h-5 xl:w-7 xl:h-7 object-contain">
+								<span class="text-color-quaternary text-color-quaternary text-xs lg:text-[15px] font-bold">30 – 60
+									min</span>
+							</div>
+							<div class="w-[1px] h-6 bg-[#C4CCD4]"></div>
+							<div class="flex items-center gap-x-2 py-3.5">
+								<img src="assets/images/icons/catalog/icon5.svg" alt="" class="w-5 h-5 xl:w-7 xl:h-7 object-contain">
+								<span class="text-color-quaternary text-color-quaternary text-xs lg:text-[15px] font-bold">2</span>
+							</div>
+							<div class="w-[1px] h-6 bg-[#C4CCD4]"></div>
+							<div class="flex items-center gap-x-2 py-3.5">
+								<img src="assets/images/icons/catalog/icon9.svg" alt="" class="w-5 h-5 xl:w-7 xl:h-7 object-contain">
+								<span
+									class="text-color-quaternary text-color-quaternary text-xs lg:text-[15px] font-bold">Střední</span>
+							</div>
+						</div>
+						<!--  -->
+						<div class="mb-6 sm:mb-10 xl:mb-20">
+							<p class="text-base xl:text-lg leading-[1.8] text-color-primary line-clamp-3 mb-4">
+								Kacíř: Zkáza Roanoke je asymetrická karetní hra pro dva hráče, která je zasazena do počátku kolonizace
+								Ameriky do osady Roanoke. Jádrem hry je konflikt čarodějnice a jejího lovce. Čarodějnice se snaží
+								dokončit rituál a získat pod svoji nadvládu osadu, zatímco lovec se snaží vypátrat, za koho se
+								čarodějnice vydává.
+							</p>
+							<a href="#" class="text-base xl:text-lg flex items-center gap-x-1.5 text-color-secondary ">
+								Podrobný popis
+								<i class="fa-solid fa-chevron-down"></i>
+							</a>
+						</div>
+						<!--  -->
+						<div class="mb-4">
+							<h6 class="font-black text-color-primary uppercase text-sm md:text-base xl:text-lg mb-1.5 xl:mb-2.5">
+								Koupit na
+								planetě</h6>
+							<div class="flex gap-x-3">
+								<p class="max-w-[150px] md:max-w-[180px] xl:max-w-[270px] text-sm md:text-base xl:text-lg">
+									Tuto hru si můžete koupit na našem spřáteleném e-shopu
+								</p>
+								<a href="#" class="flex items-center justify-start">
+									<img src="assets/images/details/planeta.svg" alt=""
+										class="max-w-[150px] md:max-w-[180px] xl:max-w-[227px]">
+								</a>
+							</div>
+						</div>
+						<!--  -->
+						<div class="flex items-center gap-x-4">
+							<div>
+								<div class="flex-i gap-x-1.5 text-[13px] text-[#2A9B0D]">
+									<i class="fa fa-check" aria-hidden="true"></i>
+									<span>SKLADEM</span>
+								</div>
+								<div class="flex items-center gap-x-1 mb-1.5 2xl:mb-2.5">
+									<h2 class="font-black text-2xl md:text-3xl xl:text-[35px] 2xl:text-[40px]">3850</h2>
+									<span class="text-color-quaternary text-base md:xl xl:text-2xl font-medium">Kč</span>
+								</div>
+								<p class="text-[13px] text-color-quaternary ">Doporučená cena</p>
+							</div>
+							<a href="#"
+								class="flex items-center justify-center w-fit mx-auto rounded-[100px] px-10 md:px-12 xl:px-14 2xl:px-16 py-2.5 md:py-3 xl:py-4 2xl:py-5 bg-[#EC5C13] text-white uppercase text-sm xl:text-base 2xl:text-lg relative overflow-hidden hover:shadow-none gap-x-1 md:gap-x-1.5 group shadow-[0_4px_4px_0_#00000059] transition-all duration-300 hover:bg-[#EE6D2B] font-extrabold">
+								Koupit
+								<img src="assets/images/details/planeta2.svg" alt=""
+									class="rotate-[40deg] translate-x-[40px] translate-y-[60px] transition-all duration-300 group-hover:rotate-0 group-hover:translate-x-0 md:group-hover:translate-y-0 2xl:group-hover:translate-y-[-2px] w-6 md:w-7 2xl:w-10 h-auto absolute right-3">
+							</a>
+						</div>
+					</div>
+				</div>
+				<!--  -->
+				<div class="grid grid-cols-1 gap-y-4 md:grid-cols-2 gap-x-8 xl:gap-x-14 pb-10">
+					<div>
+						<h2 class="font-bold text-xl sm:text-2xl md:text-[26px] xl:text-3xl uppercase font-inknut-antiqua mb-2">
+							Podrobný popis
+						</h2>
+						<p class="text-sm xl:text-[15px] font-light leading-[1.9] mb-2.5">
+							Kacíř: Zkáza Roanoke je asymetrická karetní hra pro dva hráče, která je zasazena do počátku kolonizace
+							Ameriky do osady Roanoke. Jádrem hry je konflikt čarodějnice a jejího lovce. Čarodějnice se snaží dokončit
+							rituál a získat pod svoji nadvládu osadu, zatímco lovec se snaží vypátrat, za koho se čarodějnice vydává.
+							Každý z hráčů používá ve hře svůj vlastní balíček 50 karet a má k dispozici rozdílné prostředky k boji s
+							protivníkem. Cesta k vítězství je spletitá. Jakou taktiku  použijete? Jedinečné ilustrace Maren Guttové 
+							dotvářejí  temnou  atmosféru,  v  níž  před  vámi  znovu  ožívá  příběh ztracené kolonie Roanoke.
+						</p>
+						<div class="px-3">
+							<h3 class="font-semibold text-sm xl:text-[15px] mb-1.5">Kompletní herní sada obsahuje:</h3>
+							<ul>
+								<li class="flex items-start gap-x-2.5 mb-2.5">
+									<div class="w-2.5 h-2.5 border-[3px] border-[#1D71C9] rounded-full translate-y-2"></div>
+									<p class="w-[calc(100%-20px)] text-sm xl:text-[15px] font-light">
+										všechna rozšířeníi
+										<span class="font-semibold text-color-secondary underline">Kacíř: Zkáza Roanoke</span>
+									</p>
+								</li>
+								<li class="flex items-start gap-x-2.5 mb-2.5">
+									<div class="w-2.5 h-2.5 border-[3px] border-[#1D71C9] rounded-full translate-y-2"></div>
+									<p class="w-[calc(100%-20px)] text-sm xl:text-[15px] font-light">
+										základní sadu
+										<span class="font-semibold text-color-secondary underline">Kacíř: Za palisádami</span>,
+										<span class="font-semibold text-color-secondary underline">Kacíř: Souboj myslí</span>,
+										<span class="font-semibold text-color-secondary underline">Kacíř: Předkové</span>,
+										<span class="font-semibold text-color-secondary underline">Kacíř: Souboj myslí</span>,
+										<span class="font-semibold text-color-secondary underline">Kacíř: Za palisádami</span>
+									</p>
+								</li>
+								<li class="flex items-start gap-x-2.5 mb-2.5">
+									<div class="w-2.5 h-2.5 border-[3px] border-[#1D71C9] rounded-full translate-y-2"></div>
+									<p class="w-[calc(100%-20px)] text-sm xl:text-[15px] font-light">
+										<span class="font-semibold text-color-secondary underline">Kacíř: Zkáza Roanoke</span>
+									</p>
+								</li>
+								<li class="flex items-start gap-x-2.5 mb-2.5">
+									<div class="w-2.5 h-2.5 border-[3px] text-color-secondary rounded-full translate-y-2"></div>
+									<p class="w-[calc(100%-20px)] text-sm xl:text-[15px] font-light">
+										<span class="font-semibold text-color-secondary underline">Kacíř – sada dřevěných žetonů</span>
+									</p>
+								</li>
+								<li class="flex items-start gap-x-2.5 mb-2.5">
+									<div class="w-2.5 h-2.5 border-[3px] border-[#1D71C9] rounded-full translate-y-2"></div>
+									<p class="w-[calc(100%-20px)] text-sm xl:text-[15px] font-light">
+										<span class="font-semibold text-color-secondary underline">Kacíř – sada dřevěných mincí vlivuKacíř –
+											sada
+											dřevěných žetonů</span>
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--  -->
+					<div class="bg-[#F0F2F4] p-4 sm:p-8">
+						<h2 class="font-bold text-sm md:text-base lg:text-lg mb-2 font-inknut-antiqua uppercase">Doplňující
+							informace</h2>
+						<div class="flex flex-wrap gap-y-4 gap-x-4 md:gap-x-6 xl:gap-x-10 mb-6">
+							<div class="">
+								<span class="font-semibold text-sm md:text-base xl:text-lg block mb-1">Komunikace:</span>
+								<div class="flex gap-x-2.5 items-center">
+									<div class="filled-circle"></div>
+									<div class="filled-circle"></div>
+									<div class="unfilled-circle"></div>
+									<div class="unfilled-circle"></div>
+									<div class="unfilled-circle"></div>
+								</div>
+							</div>
+							<div class="">
+								<span class="font-semibold text-sm md:text-base xl:text-lg block mb-1">Náhoda:</span>
+								<div class="flex gap-x-2.5 items-center">
+									<div class="filled-circle"></div>
+									<div class="unfilled-circle"></div>
+									<div class="unfilled-circle"></div>
+									<div class="unfilled-circle"></div>
+									<div class="unfilled-circle"></div>
+								</div>
+							</div>
+							<div class="">
+								<span class="font-semibold text-sm md:text-base xl:text-lg block mb-1">Strategie:</span>
+								<div class="flex gap-x-2.5 items-center">
+									<div class="filled-circle"></div>
+									<div class="filled-circle"></div>
+									<div class="filled-circle"></div>
+									<div class="filled-circle"></div>
+									<div class="unfilled-circle"></div>
+								</div>
+							</div>
+						</div>
+						<ul class="mb-6  gap-x-10 xl:columns-2">
+							<li class="mb-2.5">
+								<p class="font-light text-[13px]">
+									Autor:
+									<span class="font-semibold">
+										Kasper Kjær Christiansen, Kåre Storgaard
+									</span>
+								</p>
+							</li>
+							<li class="mb-2.5">
+								<p class="font-light text-[13px]">
+									Ilustrátor:
+									<span class="font-semibold">
+										Maren Gutt
+									</span>
+								</p>
+							</li>
+							<li class="mb-2.5">
+								<p class="font-light text-[13px]">
+									Původní vydavatel:
+									<span class="font-semibold">
+										Wyrmgold
+									</span>
+								</p>
+							</li>
+							<li class="mb-2.5">
+								<p class="font-light text-[13px]">
+									Mechanismy:
+									<span class="font-semibold">
+										Blafování, Dedukce, Worker-placement, Správa karet v ruce
+									</span>
+								</p>
+							</li>
+						</ul>
+						<div>
+							<h2 class="font-bold text-sm lg:text-lg mb-2 font-inknut-antiqua uppercase">Soubory ke stažení</h2>
+							<ul>
+								<li class="mb-2.5">
+									<a href="#"
+										class="text-color-secondary underline text-sm xl:text-[15px] font-semibold flex items-center gap-x-2 group hover:no-underline hover:text-[#2F3C4A]">
+										<img src="assets/images/details/icon2.svg" alt="" class="group-hover:hidden">
+										<img src="assets/images/details/icon.svg" alt="" class="hidden group-hover:block">
+										Pravidla hry Kacíř: Zkáza Roanoke (česky)
+									</a>
+								</li>
+								<li class="mb-2.5">
+									<a href="#"
+										class="text-color-secondary underline text-sm xl:text-[15px] font-semibold flex items-center gap-x-2 group hover:no-underline hover:text-[#2F3C4A]">
+										<img src="assets/images/details/icon2.svg" alt="" class="group-hover:hidden">
+										<img src="assets/images/details/icon.svg" alt="" class="hidden group-hover:block">
+										Pravidla hry Kacíř: Zkáza Roanoke (česky)
+									</a>
+								</li>
+								<li class="mb-2.5">
+									<a href="#"
+										class="text-color-secondary underline text-sm xl:text-[15px] font-semibold flex items-center gap-x-2 group hover:no-underline hover:text-[#2F3C4A]">
+										<img src="assets/images/details/icon2.svg" alt="" class="group-hover:hidden">
+										<img src="assets/images/details/icon.svg" alt="" class="hidden group-hover:block">
+										Pravidla hry Kacíř: Zkáza Roanoke (česky)
+									</a>
+								</li>
+								<li class="mb-2.5">
+									<a href="#"
+										class="text-color-secondary underline text-sm xl:text-[15px] font-semibold flex items-center gap-x-2 group hover:no-underline hover:text-[#2F3C4A]">
+										<img src="assets/images/details/icon2.svg" alt="" class="group-hover:hidden">
+										<img src="assets/images/details/icon.svg" alt="" class="hidden group-hover:block">
+										Pravidla hry Kacíř: Zkáza Roanoke (česky)
+									</a>
+								</li>
+								<li class="mb-2.5">
+									<a href="#"
+										class="text-color-secondary underline text-sm xl:text-[15px] font-semibold flex items-center gap-x-2 group hover:no-underline hover:text-[#2F3C4A]">
+										<img src="assets/images/details/icon2.svg" alt="" class="group-hover:hidden">
+										<img src="assets/images/details/icon.svg" alt="" class="hidden group-hover:block">
+										Pravidla hry Kacíř: Zkáza Roanoke (česky)
+									</a>
+								</li>
+								<li class="mb-2.5">
+									<a href="#"
+										class="text-color-secondary underline text-sm xl:text-[15px] font-semibold flex items-center gap-x-2 group hover:no-underline hover:text-[#2F3C4A]">
+										<img src="assets/images/details/icon2.svg" alt="" class="group-hover:hidden">
+										<img src="assets/images/details/icon.svg" alt="" class="hidden group-hover:block">
+										Pravidla hry Kacíř: Zkáza Roanoke (česky)
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!--  -->
+				<div class="swiper videoSlider">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<iframe class="w-full h-[232px]" src="https://www.youtube.com/embed/UfOgPcV3u48?si=Wt4QAA4bibxHX50N"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+						</div>
+						<div class="swiper-slide">
+							<iframe class="w-full h-[232px]" src="https://www.youtube.com/embed/UfOgPcV3u48?si=Wt4QAA4bibxHX50N"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+						</div>
+						<div class="swiper-slide">
+							<iframe class="w-full h-[232px]" src="https://www.youtube.com/embed/UfOgPcV3u48?si=Wt4QAA4bibxHX50N"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+						</div>
+						<div class="swiper-slide">
+							<iframe class="w-full h-[232px]" src="https://www.youtube.com/embed/UfOgPcV3u48?si=Wt4QAA4bibxHX50N"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+						</div>
+						<div class="swiper-slide">
+							<iframe class="w-full h-[232px]" src="https://www.youtube.com/embed/UfOgPcV3u48?si=Wt4QAA4bibxHX50N"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+						</div>
+						<div class="swiper-slide">
+							<iframe class="w-full h-[232px]" src="https://www.youtube.com/embed/UfOgPcV3u48?si=Wt4QAA4bibxHX50N"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+						</div>
+						<div class="swiper-slide">
+							<iframe class="w-full h-[232px]" src="https://www.youtube.com/embed/UfOgPcV3u48?si=Wt4QAA4bibxHX50N"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+						</div>
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination videoSlider-pagination"></div>
+					<!-- Add Navigation -->
+					<div class="swiper-button-prev videoSlider-prev">
+						<img src="assets/images/left-arrow.svg" alt="">
+					</div>
+					<div class="swiper-button-next videoSlider-next">
+						<img src="assets/images/right-arrow.svg" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- banner end -->
+		<section class="bg-[#F0F2F4] py-6 sm:py-7 md:py-9 xl:py-11">
+			<div class="container">
+				<h2
+					class="font-bold text-lg sm:text-xl md:text-[22px] xl:text-[25px] mb-7 text-center uppercase font-inknut-antiqua">
+					Podobné produkty
+				</h2>
+				<div class="swiper videoSlider2 ">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="#"
+								class="card block p-2.5 bg-white group shadow-[0_5px_15px_0_#00000066] hover:shadow-none hover:bg-transparent">
+								<div
+									class="relative z-0 h-[230px] lg:h-[250px] 2xl:h-[280px] overflow-hidden group-hover:rotate-[5deg] transition-all duration-500 cursor-pointer group-hover:scale-95">
+									<img src="assets/images/card1.png" alt=""
+										class="w-full h-full relative z-10 group-hover:blur-sm transition-all duration-500">
+									<div
+										class="absolute w-full h-full top-0 left-0 opacity-0 bg-[#1d70c985] z-20 group-hover:opacity-100 transition-all duration-500">
+									</div>
+									<img src="assets/images/icons/card-search-icon.svg" alt=""
+										class="absolute rotate-45 top-[110%] left-[50%] transition-all duration-500 group-hover:top-[50%] group-hover:rotate-0 group-hover:translate-x-[-50%] group-hover:translate-y-[-50%] z-30 w-[45px] xl:w-[65px] h-auto">
+								</div>
+								<!-- card header end -->
+								<div
+									class="pt-3 md:pt-3.5 xl:pt-[18px] pb-[10px] px-2.5 transition-all duration-500 group-hover:translate-y-2 relative">
+									<h6
+										class="text-color-primary text-[13px] md:text-sm xl:text-[16px] font-black mb-12 uppercase group-hover:text-[#1D71C9] transition-all duration-500 text-center leading-[20px]">
+										DUNA Imperium – povstání
+									</h6>
+									<div class="pb-4 mb-4 flex items-center justify-center gap-x-5 relative">
+										<div
+											class="flex items-center gap-1 absolute left-[50%] translate-x-[-50%] group-hover:left-[5%] group-hover:translate-x-[0%] transition-all duration-500">
+											<h4 class="text-xl font-black text-color-primary">2580</h4>
+											<span class="text-base font-medium text-color-quaternary">Kč</span>
+										</div>
+										<div
+											class="py-3 px-8 text-[11px] bg-[#EC5C13] rounded-[40px] text-white absolute z-0 opacity-0 left-[50%] translate-x-[-50%] group-hover:left-[50%]   group-hover:translate-x-[0%] group-hover:opacity-100 group-hover:z-9 transition-all duration-500 hover:bg-[#EE6D2B] font-extrabold">
+											Details
+											<svg
+												class="svg-inline--fa fa-chevron-right btnIcn rotate-[40deg] translate-x-[40px] translate-y-[60px] transition-all duration-300 group-hover:rotate-0 group-hover:translate-x-0 group-hover:translate-y-[0px]"
+												aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" role="img"
+												xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
+												<path fill="currentColor"
+													d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z">
+												</path>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#"
+								class="card block p-2.5 bg-white group shadow-[0_5px_15px_0_#00000066] hover:shadow-none hover:bg-transparent">
+								<div
+									class="relative z-0 h-[230px] lg:h-[250px] 2xl:h-[280px] overflow-hidden group-hover:rotate-[5deg] transition-all duration-500 cursor-pointer group-hover:scale-95">
+									<img src="assets/images/card1.png" alt=""
+										class="w-full h-full relative z-10 group-hover:blur-sm transition-all duration-500">
+									<div
+										class="absolute w-full h-full top-0 left-0 opacity-0 bg-[#1d70c985] z-20 group-hover:opacity-100 transition-all duration-500">
+									</div>
+									<img src="assets/images/icons/card-search-icon.svg" alt=""
+										class="absolute rotate-45 top-[110%] left-[50%] transition-all duration-500 group-hover:top-[50%] group-hover:rotate-0 group-hover:translate-x-[-50%] group-hover:translate-y-[-50%] z-30 w-[45px] xl:w-[65px] h-auto">
+								</div>
+								<!-- card header end -->
+								<div
+									class="pt-3 md:pt-3.5 xl:pt-[18px] pb-[10px] px-2.5 transition-all duration-500 group-hover:translate-y-2 relative">
+									<h6
+										class="text-color-primary text-[13px] md:text-sm xl:text-[16px] font-black mb-12 uppercase group-hover:text-[#1D71C9] transition-all duration-500 text-center leading-[20px]">
+										DUNA Imperium – povstání
+									</h6>
+									<div class="pb-4 mb-4 flex items-center justify-center gap-x-5 relative">
+										<div
+											class="flex items-center gap-1 absolute left-[50%] translate-x-[-50%] group-hover:left-[5%] group-hover:translate-x-[0%] transition-all duration-500">
+											<h4 class="text-xl font-black text-color-primary">2580</h4>
+											<span class="text-base font-medium text-color-quaternary">Kč</span>
+										</div>
+										<div
+											class="py-3 px-8 text-[11px] bg-[#EC5C13] rounded-[40px] text-white absolute z-0 opacity-0 left-[50%] translate-x-[-50%] group-hover:left-[50%]   group-hover:translate-x-[0%] group-hover:opacity-100 group-hover:z-9 transition-all duration-500 hover:bg-[#EE6D2B] font-extrabold">
+											Details
+											<svg
+												class="svg-inline--fa fa-chevron-right btnIcn rotate-[40deg] translate-x-[40px] translate-y-[60px] transition-all duration-300 group-hover:rotate-0 group-hover:translate-x-0 group-hover:translate-y-[0px]"
+												aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" role="img"
+												xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
+												<path fill="currentColor"
+													d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z">
+												</path>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#"
+								class="card block p-2.5 bg-white group shadow-[0_5px_15px_0_#00000066] hover:shadow-none hover:bg-transparent">
+								<div
+									class="relative z-0 h-[230px] lg:h-[250px] 2xl:h-[280px] overflow-hidden group-hover:rotate-[5deg] transition-all duration-500 cursor-pointer group-hover:scale-95">
+									<img src="assets/images/card1.png" alt=""
+										class="w-full h-full relative z-10 group-hover:blur-sm transition-all duration-500">
+									<div
+										class="absolute w-full h-full top-0 left-0 opacity-0 bg-[#1d70c985] z-20 group-hover:opacity-100 transition-all duration-500">
+									</div>
+									<img src="assets/images/icons/card-search-icon.svg" alt=""
+										class="absolute rotate-45 top-[110%] left-[50%] transition-all duration-500 group-hover:top-[50%] group-hover:rotate-0 group-hover:translate-x-[-50%] group-hover:translate-y-[-50%] z-30 w-[45px] xl:w-[65px] h-auto">
+								</div>
+								<!-- card header end -->
+								<div
+									class="pt-3 md:pt-3.5 xl:pt-[18px] pb-[10px] px-2.5 transition-all duration-500 group-hover:translate-y-2 relative">
+									<h6
+										class="text-color-primary text-[13px] md:text-sm xl:text-[16px] font-black mb-12 uppercase group-hover:text-[#1D71C9] transition-all duration-500 text-center leading-[20px]">
+										DUNA Imperium – povstání
+									</h6>
+									<div class="pb-4 mb-4 flex items-center justify-center gap-x-5 relative">
+										<div
+											class="flex items-center gap-1 absolute left-[50%] translate-x-[-50%] group-hover:left-[5%] group-hover:translate-x-[0%] transition-all duration-500">
+											<h4 class="text-xl font-black text-color-primary">2580</h4>
+											<span class="text-base font-medium text-color-quaternary">Kč</span>
+										</div>
+										<div
+											class="py-3 px-8 text-[11px] bg-[#EC5C13] rounded-[40px] text-white absolute z-0 opacity-0 left-[50%] translate-x-[-50%] group-hover:left-[50%]   group-hover:translate-x-[0%] group-hover:opacity-100 group-hover:z-9 transition-all duration-500 hover:bg-[#EE6D2B] font-extrabold">
+											Details
+											<svg
+												class="svg-inline--fa fa-chevron-right btnIcn rotate-[40deg] translate-x-[40px] translate-y-[60px] transition-all duration-300 group-hover:rotate-0 group-hover:translate-x-0 group-hover:translate-y-[0px]"
+												aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" role="img"
+												xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
+												<path fill="currentColor"
+													d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z">
+												</path>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#"
+								class="card block p-2.5 bg-white group shadow-[0_5px_15px_0_#00000066] hover:shadow-none hover:bg-transparent">
+								<div
+									class="relative z-0 h-[230px] lg:h-[250px] 2xl:h-[280px] overflow-hidden group-hover:rotate-[5deg] transition-all duration-500 cursor-pointer group-hover:scale-95">
+									<img src="assets/images/card1.png" alt=""
+										class="w-full h-full relative z-10 group-hover:blur-sm transition-all duration-500">
+									<div
+										class="absolute w-full h-full top-0 left-0 opacity-0 bg-[#1d70c985] z-20 group-hover:opacity-100 transition-all duration-500">
+									</div>
+									<img src="assets/images/icons/card-search-icon.svg" alt=""
+										class="absolute rotate-45 top-[110%] left-[50%] transition-all duration-500 group-hover:top-[50%] group-hover:rotate-0 group-hover:translate-x-[-50%] group-hover:translate-y-[-50%] z-30 w-[45px] xl:w-[65px] h-auto">
+								</div>
+								<!-- card header end -->
+								<div
+									class="pt-3 md:pt-3.5 xl:pt-[18px] pb-[10px] px-2.5 transition-all duration-500 group-hover:translate-y-2 relative">
+									<h6
+										class="text-color-primary text-[13px] md:text-sm xl:text-[16px] font-black mb-12 uppercase group-hover:text-[#1D71C9] transition-all duration-500 text-center leading-[20px]">
+										DUNA Imperium – povstání
+									</h6>
+									<div class="pb-4 mb-4 flex items-center justify-center gap-x-5 relative">
+										<div
+											class="flex items-center gap-1 absolute left-[50%] translate-x-[-50%] group-hover:left-[5%] group-hover:translate-x-[0%] transition-all duration-500">
+											<h4 class="text-xl font-black text-color-primary">2580</h4>
+											<span class="text-base font-medium text-color-quaternary">Kč</span>
+										</div>
+										<div
+											class="py-3 px-8 text-[11px] bg-[#EC5C13] rounded-[40px] text-white absolute z-0 opacity-0 left-[50%] translate-x-[-50%] group-hover:left-[50%]   group-hover:translate-x-[0%] group-hover:opacity-100 group-hover:z-9 transition-all duration-500 hover:bg-[#EE6D2B] font-extrabold">
+											Details
+											<svg
+												class="svg-inline--fa fa-chevron-right btnIcn rotate-[40deg] translate-x-[40px] translate-y-[60px] transition-all duration-300 group-hover:rotate-0 group-hover:translate-x-0 group-hover:translate-y-[0px]"
+												aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" role="img"
+												xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
+												<path fill="currentColor"
+													d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z">
+												</path>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#"
+								class="card block p-2.5 bg-white group shadow-[0_5px_15px_0_#00000066] hover:shadow-none hover:bg-transparent">
+								<div
+									class="relative z-0 h-[230px] lg:h-[250px] 2xl:h-[280px] overflow-hidden group-hover:rotate-[5deg] transition-all duration-500 cursor-pointer group-hover:scale-95">
+									<img src="assets/images/card1.png" alt=""
+										class="w-full h-full relative z-10 group-hover:blur-sm transition-all duration-500">
+									<div
+										class="absolute w-full h-full top-0 left-0 opacity-0 bg-[#1d70c985] z-20 group-hover:opacity-100 transition-all duration-500">
+									</div>
+									<img src="assets/images/icons/card-search-icon.svg" alt=""
+										class="absolute rotate-45 top-[110%] left-[50%] transition-all duration-500 group-hover:top-[50%] group-hover:rotate-0 group-hover:translate-x-[-50%] group-hover:translate-y-[-50%] z-30 w-[45px] xl:w-[65px] h-auto">
+								</div>
+								<!-- card header end -->
+								<div
+									class="pt-3 md:pt-3.5 xl:pt-[18px] pb-[10px] px-2.5 transition-all duration-500 group-hover:translate-y-2 relative">
+									<h6
+										class="text-color-primary text-[13px] md:text-sm xl:text-[16px] font-black mb-12 uppercase group-hover:text-[#1D71C9] transition-all duration-500 text-center leading-[20px]">
+										DUNA Imperium – povstání
+									</h6>
+									<div class="pb-4 mb-4 flex items-center justify-center gap-x-5 relative">
+										<div
+											class="flex items-center gap-1 absolute left-[50%] translate-x-[-50%] group-hover:left-[5%] group-hover:translate-x-[0%] transition-all duration-500">
+											<h4 class="text-xl font-black text-color-primary">2580</h4>
+											<span class="text-base font-medium text-color-quaternary">Kč</span>
+										</div>
+										<div
+											class="py-3 px-8 text-[11px] bg-[#EC5C13] rounded-[40px] text-white absolute z-0 opacity-0 left-[50%] translate-x-[-50%] group-hover:left-[50%]   group-hover:translate-x-[0%] group-hover:opacity-100 group-hover:z-9 transition-all duration-500 hover:bg-[#EE6D2B] font-extrabold">
+											Details
+											<svg
+												class="svg-inline--fa fa-chevron-right btnIcn rotate-[40deg] translate-x-[40px] translate-y-[60px] transition-all duration-300 group-hover:rotate-0 group-hover:translate-x-0 group-hover:translate-y-[0px]"
+												aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" role="img"
+												xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
+												<path fill="currentColor"
+													d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z">
+												</path>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#"
+								class="card block p-2.5 bg-white group shadow-[0_5px_15px_0_#00000066] hover:shadow-none hover:bg-transparent">
+								<div
+									class="relative z-0 h-[230px] lg:h-[250px] 2xl:h-[280px] overflow-hidden group-hover:rotate-[5deg] transition-all duration-500 cursor-pointer group-hover:scale-95">
+									<img src="assets/images/card1.png" alt=""
+										class="w-full h-full relative z-10 group-hover:blur-sm transition-all duration-500">
+									<div
+										class="absolute w-full h-full top-0 left-0 opacity-0 bg-[#1d70c985] z-20 group-hover:opacity-100 transition-all duration-500">
+									</div>
+									<img src="assets/images/icons/card-search-icon.svg" alt=""
+										class="absolute rotate-45 top-[110%] left-[50%] transition-all duration-500 group-hover:top-[50%] group-hover:rotate-0 group-hover:translate-x-[-50%] group-hover:translate-y-[-50%] z-30 w-[45px] xl:w-[65px] h-auto">
+								</div>
+								<!-- card header end -->
+								<div
+									class="pt-3 md:pt-3.5 xl:pt-[18px] pb-[10px] px-2.5 transition-all duration-500 group-hover:translate-y-2 relative">
+									<h6
+										class="text-color-primary text-[13px] md:text-sm xl:text-[16px] font-black mb-12 uppercase group-hover:text-[#1D71C9] transition-all duration-500 text-center leading-[20px]">
+										DUNA Imperium – povstání
+									</h6>
+									<div class="pb-4 mb-4 flex items-center justify-center gap-x-5 relative">
+										<div
+											class="flex items-center gap-1 absolute left-[50%] translate-x-[-50%] group-hover:left-[5%] group-hover:translate-x-[0%] transition-all duration-500">
+											<h4 class="text-xl font-black text-color-primary">2580</h4>
+											<span class="text-base font-medium text-color-quaternary">Kč</span>
+										</div>
+										<div
+											class="py-3 px-8 text-[11px] bg-[#EC5C13] rounded-[40px] text-white absolute z-0 opacity-0 left-[50%] translate-x-[-50%] group-hover:left-[50%]   group-hover:translate-x-[0%] group-hover:opacity-100 group-hover:z-9 transition-all duration-500 hover:bg-[#EE6D2B] font-extrabold">
+											Details
+											<svg
+												class="svg-inline--fa fa-chevron-right btnIcn rotate-[40deg] translate-x-[40px] translate-y-[60px] transition-all duration-300 group-hover:rotate-0 group-hover:translate-x-0 group-hover:translate-y-[0px]"
+												aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" role="img"
+												xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
+												<path fill="currentColor"
+													d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z">
+												</path>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination videoSlider-pagination2"></div>
+					<!-- Add Navigation -->
+					<div class="swiper-button-prev videoSlider-prev2">
+						<img src="assets/images/left-arrow.svg" alt="">
+					</div>
+					<div class="swiper-button-next videoSlider-next2">
+						<img src="assets/images/right-arrow.svg" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer relative z-0 bg-[#F0F2F4]">
+			<img src="assets/images/footer-icons-bg.svg" alt="" class="absolute top-0 right-0 z-10 w-[150px]">
+			<div class="footer-bg pt-[100px] lg:pt-[110px] 2xl:pt-[135px] pb-5 md:pb-[26px] relative z-20">
+				<div class="container">
+					<h2
+						class="text-center text-color-tertiary uppercase mb-5 text-base md:text-lg xl:text-xl font-bold font-inknut-antiqua">
+						Kontakty</h2>
+					<ul class="flex items-center justify-center gap-x-5 xl:gap-x-[30px] mb-6">
+						<li class="flex items-center gap-x-1.5">
+							<img src="assets/images/icons/phone.svg" alt="" class="w-4">
+							<a href="tel:+3014749625" class="text-[13px] xl:text-[15px] text-white font-medium underline">
+								<span class="font-normal">+420 </span> 774 057 570
+							</a>
+						</li>
+						<li class="h-7 w-[1px] bg-[#566576]"></li>
+						<li class="flex items-center gap-x-1.5">
+							<img src="assets/images/icons/mail.svg" alt="" class="w-[13px]">
+							<a href="tel:+3014749625" class="text-[13px] xl:text-[15px] text-white font-medium underline">
+								obchod@rexhry.cz
+							</a>
+						</li>
+					</ul>
+					<h6 class="uppercase text-sm xl:text-base text-color-tertiary mb-[24px] text-center font-bold">Najdete nás i
+						na
+						sociálních sítích
+					</h6>
+					<ul
+						class="flex items-center gap-x-3 md:gap-x-6 xl:gap-x-[30px] justify-center mb-8 xl:mb-[55px] 2xl:mb-[85px]">
+						<li>
+							<a href="#">
+								<img src="assets/images/icons/youtube2.svg" alt="" class="w-[80px] h-auto">
+							</a>
+						</li>
+						<li class="h-7 w-[1px] bg-[#566576]"></li>
+						<li>
+							<a href="#">
+								<img src="assets/images/icons/facebook2.svg" alt="" class="w-[80px] h-auto">
+							</a>
+						</li>
+						<li class="h-7 w-[1px] bg-[#566576]"></li>
+						<li>
+							<a href="#">
+								<img src="assets/images/icons/instagram2.svg" alt="" class="w-[80px] h-auto">
+							</a>
+						</li>
+					</ul>
+					<ul class="mb-1 flex items-center gap-x-1.5 justify-center">
+						<li>
+							<a href="#" class="text-[13px] font-light text-color-quaternary">Obchodní podmínky</a>
+						</li>
+						<li class="text-[13px] font-light text-color-quaternary">|</li>
+						<li>
+							<a href="#" class="text-[13px] font-light text-color-quaternary">Reklamace</a>
+						</li>
+					</ul>
+					<ul class="flex-col sm:flex-row flex items-center gap-x-1.5 justify-center mb-2.5">
+						<li class="text-[13px] font-light text-color-quaternary">© 2024 Rexhry</li>
+						<li class="text-[13px] font-light text-color-quaternary hidden sm:block">|</li>
+						<li class="text-[13px] font-light text-color-quaternary "> Vytvoril ExpertDev</li>
+						<li class="text-[13px] font-light text-color-quaternary hidden sm:block">|</li>
+						<li class="text-[13px] font-light text-color-quaternary">Všechna práva vyhrazena</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- body-wrapper end -->
+	<script src="assets/js/jquery.js"></script>
+	<script src="dist/fontawesome-6.6.0/js/all.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>

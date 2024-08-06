@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Complaint</title>
+	<!-- Favicons -->
+	<link href="assets/images/favicone.png" rel="icon">
+	<!-- font aweasome -->
+	<link rel="stylesheet" href="dist/fontawesome-6.6.0/css/all.min.css">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=League+Spartan:wght@100..900&display=swap"
+		rel="stylesheet">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<!-- Main Stylesheet File -->
+	<link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="body-wrapper relative z-0">
+		<div id="sidebar"
+			class="fixed top-0 bottom-0 right-0 bg-white text-color-primary w-[310px] sm:w-[320px] z-[999] h-screen translate-x-full transition-all duration-500 ease-in-out lg:hidden">
+			<div class="flex items-center justify-between py-4 px-4 border-b border-[#2F3C4A]">
+				<div class="flex items-center gap-x-2">
+					<img src="assets/images/logo.svg" alt="" class="w-14 h-auto">
+					<img src="assets/images/logo-text.svg" alt="" class="w-20">
+				</div>
+				<div
+					class="closeBTN flex justify-center items-center text-color-primary text-xl w-[40px] h-[40px] border-2 border-[#2F3C4A] rounded-[50%] cursor-pointer">
+					<i class="fa-solid fa-xmark"></i>
+				</div>
+			</div>
+			<div class="border border-[#C4CCD4] flex items-center bg-[#E2E5E9] p-[3px] gap-x-1">
+				<input type="text" placeholder="Vyhledat hru..."
+					class="bg-[#E2E5E9] w-[calc(100%-30px)] text-color-quaternary pl-[10px] text-sm border-none outline-none">
+				<button class="w-[30px] h-[30px] bg-[#C4CCD4] flex items-center justify-center">
+					<img src="assets/images/icons/search.svg" alt="" class="w-[18px]">
+				</button>
+			</div>
+			<ul class="px-4 pt-6 pb-4">
+				<li class="py-2">
+					<a href="catalog.html" class="uppercase text-base font-semibold text-color-primary">Katalog her</a>
+				</li>
+				<li class="py-2">
+					<a href="up-comming.html" class="uppercase text-base font-semibold text-color-primary">Připravujeme</a>
+				</li>
+				<li class="py-2">
+					<a href="news.html" class="uppercase text-base font-semibold text-color-primary">Aktuality</a>
+				</li>
+				<li class="py-2">
+					<a href="about-us.html" class="uppercase text-base font-semibold text-color-primary">O nás</a>
+				</li>
+				<li class="py-2">
+					<a href="address.html" class="uppercase text-base font-semibold text-color-primary">Pro obchodníky</a>
+				</li>
+				<li class="py-2">
+					<a href="complaint.html" class="uppercase text-base font-semibold text-color-primary active">Reklamace</a>
+				</li>
+				<li class="py-2">
+					<a href="contact.html" class="uppercase text-base font-semibold text-color-primary">Kontakt</a>
+				</li>
+			</ul>
+			<div class="absolute w-full left-0 bottom-0 border-t border-[#2F3C4A] p-4">
+				<ul class="flex items-center gap-x-4 mb-3 justify-center">
+					<li class="flex items-center gap-x-1">
+						<img src="assets/images/icons/phone.svg" alt="" class="w-4">
+						<a href="tel:+923014749625" class="text-[12px] 2xl:text-sm text-color-fifth font-bold underline">
+							<span class="font-normal">+420 </span> 774 057 570
+						</a>
+					</li>
+					<li class="flex items-center gap-x-1">
+						<img src="assets/images/icons/mail.svg" alt="" class="w-[13px]">
+						<a href="mailto:naqashahsan@gmail.com" class="text-[12px] 2xl:text-sm text-color-fifth font-bold underline">
+							obchod@rexhry.cz
+						</a>
+					</li>
+				</ul>
+				<ul class="flex items-center gap-x-3 xl:gap-x-4 justify-center">
+					<li>
+						<a href="#" class="flex items-center justify-center">
+							<img src="assets/images/icons/youtube.svg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#" class="flex items-center justify-center">
+							<img src="assets/images/icons/facebook.svg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#" class="flex items-center justify-center">
+							<img src="assets/images/icons/instagram.svg" alt="">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<header class="absolute top-0 left-0 right-0 z-50">
+			<nav
+				class="w-[calc(100%-20px)] sm:max-w-[580px] md:max-w-[720px] lg:max-w-[980px] xl:max-w-[1220px] 2xl:max-w-[1326px] mx-auto bg-white pt-[6px]  shadow1 pl-[80px] lg:pl-[97px] xl:pl-[103px] 2xl:pl-[120px] pr-2.5 relative">
+				<div class="flex items-center justify-between">
+					<div class="flex items-center">
+						<a href="/"
+							class="flex justify-center items-center w-fit pt-3 lg:pt-[19px] xl:pt-[22px] 2xl:pt-[27px] pb-3 lg:pb-[18px] xl:pb-[20px] 2xl:pb-[25px] px-3 lg:px-3.5 xl:px-[18px] 2xl:px-[21px] absolute top-[-2px] lg:top-[-5px] 2xl:top-[-10px] bg-white left-[-3px] sm:left-[-6px] rotate-[5deg]">
+							<img src="assets/images/logo.svg" alt=""
+								class="w-[55px] lg:w-[70px] 2xl:w-[80px] xl:h-[70px] 2xl:h-[80px]">
+						</a>
+						<a href="/" class="block">
+							<img src="assets/images/logo-text.svg"
+								class="w-[80px] lg:w-[90px] xl:w-[100px] 2xl:w-[124px] h-auto mb-1.5" alt="">
+							<p class="text-color-quaternary text-sm xl:text-base 2xl:text-[18px]">Královsky se bavte</p>
+						</a>
+					</div>
+					<div class="navRight hidden lg:block">
+						<div
+							class="flex items-center gap-x-7 xl:gap-x-10 2xl:gap-x-16  mb-3.5 2xl:mb-[17px] justify-end pr-2.5 xl:pr-4">
+							<div class="border border-[#C4CCD4] flex items-center bg-[#E2E5E9] p-[3px] gap-x-1">
+								<input type="text" placeholder="Vyhledat hru..."
+									class="bg-[#E2E5E9] w-[225px] text-color-quaternary pl-[10px] text-sm border-none outline-none">
+								<button class="w-[30px] h-[30px] bg-[#C4CCD4] flex items-center justify-center">
+									<img src="assets/images/icons/search.svg" alt="" class="w-[18px]">
+								</button>
+							</div>
+							<div class="flex items-center gap-x-6">
+								<ul class="flex items-center gap-x-4">
+									<li class="flex items-center gap-x-1">
+										<img src="assets/images/icons/phone.svg" alt="" class="w-4">
+										<a href="tel:+923014749625" class="text-[12px] 2xl:text-sm text-color-fifth font-bold underline">
+											<span class="font-normal">+420 </span> 774 057 570
+										</a>
+									</li>
+									<li class="flex items-center gap-x-1">
+										<img src="assets/images/icons/mail.svg" alt="" class="w-[13px]">
+										<a href="mailto:naqashahsan@gmail.com"
+											class="text-[12px] 2xl:text-sm text-color-fifth font-bold underline">
+											obchod@rexhry.cz
+										</a>
+									</li>
+								</ul>
+								<ul class="flex items-center gap-x-3 xl:gap-x-4">
+									<li>
+										<a href="#" class="flex items-center justify-center">
+											<img src="assets/images/icons/youtube.svg" alt="">
+										</a>
+									</li>
+									<li>
+										<a href="#" class="flex items-center justify-center">
+											<img src="assets/images/icons/facebook.svg" alt="">
+										</a>
+									</li>
+									<li>
+										<a href="#" class="flex items-center justify-center">
+											<img src="assets/images/icons/instagram.svg" alt="">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- nav to bar end -->
+						<div>
+							<ul class="flex items-center">
+								<li>
+									<a href="catalog.html"
+										class=" navlink flex justify-center text-[13px] 2xl:text-sm text-color-primary font-black px-2 xl:px-4 pt-1 2xl:pt-2 pb-3.5 xl:pb-4 2xl:pb-6 hover:text-[#1D71C9] uppercase relative overflow-hidden border-r border-[#C4CCD4] after:content-[''] after:absolute after:bottom-[-15px] after:left-[calc(50%-7.5px)] after:w-[15px] after:h-[15px] after:bg-white after:border-[3px] after:border-[#1D71C9] after:rounded-[50%] after:transition-all hover:after:bottom-[-7px]">
+										Katalog her
+									</a>
+								</li>
+								<li>
+									<a href="up-comming.html"
+										class=" navlink flex justify-center text-[13px] 2xl:text-sm text-color-primary font-black px-2 xl:px-4 pt-1 2xl:pt-2 pb-3.5 xl:pb-4 2xl:pb-6 hover:text-[#1D71C9] uppercase relative overflow-hidden border-r border-[#C4CCD4] after:content-[''] after:absolute after:bottom-[-15px] after:left-[calc(50%-7.5px)] after:w-[15px] after:h-[15px] after:bg-white after:border-[3px] after:border-[#1D71C9] after:rounded-[50%] after:transition-all hover:after:bottom-[-7px]">
+										Připravujeme
+									</a>
+								</li>
+								<li>
+									<a href="news.html"
+										class=" navlink flex justify-center text-[13px] 2xl:text-sm text-color-primary font-black px-2 xl:px-4 pt-1 2xl:pt-2 pb-3.5 xl:pb-4 2xl:pb-6 hover:text-[#1D71C9] uppercase relative overflow-hidden border-r border-[#C4CCD4] after:content-[''] after:absolute after:bottom-[-15px] after:left-[calc(50%-7.5px)] after:w-[15px] after:h-[15px] after:bg-white after:border-[3px] after:border-[#1D71C9] after:rounded-[50%] after:transition-all hover:after:bottom-[-7px]">
+										Aktuality
+									</a>
+								</li>
+								<li>
+									<a href="about-us.html"
+										class=" navlink flex justify-center text-[13px] 2xl:text-sm text-color-primary font-black px-2 xl:px-4 pt-1 2xl:pt-2 pb-3.5 xl:pb-4 2xl:pb-6 hover:text-[#1D71C9] uppercase relative overflow-hidden border-r border-[#C4CCD4] after:content-[''] after:absolute after:bottom-[-15px] after:left-[calc(50%-7.5px)] after:w-[15px] after:h-[15px] after:bg-white after:border-[3px] after:border-[#1D71C9] after:rounded-[50%] after:transition-all hover:after:bottom-[-7px]">
+										O nás
+									</a>
+								</li>
+								<li>
+									<a href="address.html"
+										class=" navlink flex justify-center text-[13px] 2xl:text-sm text-color-primary font-black px-2 xl:px-4 pt-1 2xl:pt-2 pb-3.5 xl:pb-4 2xl:pb-6 hover:text-[#1D71C9] uppercase relative overflow-hidden border-r border-[#C4CCD4] after:content-[''] after:absolute after:bottom-[-15px] after:left-[calc(50%-7.5px)] after:w-[15px] after:h-[15px] after:bg-white after:border-[3px] after:border-[#1D71C9] after:rounded-[50%] after:transition-all hover:after:bottom-[-7px]">
+										Pro obchodníky
+									</a>
+								</li>
+								<li>
+									<a href="complaint.html"
+										class=" navlink flex justify-center text-[13px] 2xl:text-sm text-color-primary font-black px-2 xl:px-4 pt-1 2xl:pt-2 pb-3.5 xl:pb-4 2xl:pb-6 hover:text-[#1D71C9] uppercase relative overflow-hidden border-r border-[#C4CCD4] after:content-[''] after:absolute after:bottom-[-15px] after:left-[calc(50%-7.5px)] after:w-[15px] after:h-[15px] after:bg-white after:border-[3px] after:border-[#1D71C9] after:rounded-[50%] after:transition-all hover:after:bottom-[-7px] active">
+										Reklamace
+									</a>
+								</li>
+								<li>
+									<a href="contact.html"
+										class=" navlink flex justify-center text-[13px] 2xl:text-sm text-color-primary font-black px-2 xl:px-4 pt-1 2xl:pt-2 pb-3.5 xl:pb-4 2xl:pb-6 hover:text-[#1D71C9] uppercase relative overflow-hidden border-r border-[#C4CCD4] after:content-[''] after:absolute after:bottom-[-15px] after:left-[calc(50%-7.5px)] after:w-[15px] after:h-[15px] after:bg-white after:border-[3px] after:border-[#1D71C9] after:rounded-[50%] after:transition-all hover:after:bottom-[-7px]">
+										Kontakt
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="navbtn flex justify-center text-xl py-5 px-3 items-center lg:hidden cursor-pointer">
+						<i class="fa-solid fa-bars"></i>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- header end -->
+		<section class="relative z-0">
+			<img src="assets/images/contact-bg-icone.png" alt=""
+				class="hidden md:block absolute md:-bottom-14 xl:-bottom-[27%] right-0 md:w-[13%] xl:w-[16.3%] z-30 ">
+			<div class="pt-24 md:pt-[203px] pb-20 md:pb-[180px] subBanner subBanner--contact relative z-20">
+				<div class="container">
+					<div class="max-w-[725px] mx-auto text-center ">
+						<h1
+							class="text-2xl md:text-3xl xl:text-[40px] 2xl:text-[50px] text-white font-bold font-inknut-antiqua mb-2.5 leading-[30px] md:leading-[40px] xl:leading-[55px] 2xl:leading-[70px] uppercase">
+							Kontakty
+						</h1>
+						<h6 class="text-color-tertiary text-base md:text-xl xl:text-2xl 2xl:text-3xl font-inknut-antiqua">
+							Napište nám nebo zavolejte
+						</h6>
+					</div>
+				</div>
+			</div>
+			<img src="assets/images/icons/sub-banner-bg.svg" alt="" class="absolute bottom-0 left-0 z-10 w-[150px]">
+		</section>
+		<!-- banner end -->
+		<section class="pb-20 md:pb-30 xl:pb-36">
+			<div class="container">
+				<div class="max-w-[600px] mx-auto">
+					<h2
+						class="font-bold text-xl md:text-[26px] lg:text-3xl mb-3 md:mb-5 font-inknut-antiqua uppercase text-center leading-[1.5]">
+						Něco vám ve hře chybí?
+					</h2>
+					<h3
+						class="text-xl md:text-[26px] lg:text-3xl mb-6 md:mb-8 font-inknut-antiqua text-center leading-[1.5] text-color-quaternary font-medium">
+						Nebo je něco rozbité?
+					</h3>
+					<p class="text-base md:text-lg !leading-[2] text-center mb-6 lg:mb-11">
+						Vyplňte a odešlete náš formulář a my vše napravíme.Napište o jakou hru se týká, popište v čem je problém a
+						hlavně nezapomeňte přiložit dokumentační fotografie.
+					</p>
+					<div class="bg-[#F0F2F4] p-6 md:p-[30px]">
+						<form action="">
+							<div class="grid sm:grid-cols-2 gap-x-9 gap-y-4 mb-3">
+								<label>
+									<span class="block text-sm md:text-[15px] mb-1">Jméno a příjmení</span>
+									<input type="text" placeholder="Vladimír Dlouhojmenný"
+										class="h-11 border border-[#A7B2BE] py-2.5 px-3 flex items-center bg-white text-[13px] text-[#8A98A8] w-full outline-none font-light">
+								</label>
+								<label>
+									<span class="block text-sm md:text-[15px] mb-1">Váš e-mail <span class="text-red-800">*</span>
+									</span>
+									<input type="text" placeholder="vladimir.dlouhojmenny@gmail.com"
+										class="h-11 border border-[#A7B2BE] py-2.5 px-3 flex items-center bg-white text-[13px] text-[#8A98A8] w-full outline-none font-light">
+								</label>
+							</div>
+							<div class="grid mb-3">
+								<label>
+									<span class="block text-sm md:text-[15px] mb-1">O jakou hrou jde <span class="text-red-800">*</span>
+									</span>
+									<input type="text" placeholder="Divukraj: Perlava"
+										class="h-11 border border-[#A7B2BE] py-2.5 px-3 flex items-center bg-white text-[13px] text-[#8A98A8] w-full outline-none font-light">
+								</label>
+							</div>
+							<div class="grid sm:grid-cols-2 gap-x-9 gap-y-4 mb-3">
+								<label class="relative z-0 cursor-pointer">
+									<span class="block text-sm md:text-[15px] mb-1">Přiložená fotografie <span class="text-red-800">
+											*</span></span>
+									<div
+										class="h-11 border border-[#A7B2BE] p-[3px] flex items-center bg-white text-[13px] text-[#8A98A8] w-full outline-none font-light gap-x-3">
+										<div class="flex items-center justify-center w-[39px] h-full bg-[#E2E5E9]">
+											<img src="assets/images/icons/file.svg" alt="">
+										</div>
+										<input type="file" class="absolute w-full h-full opacity-0">
+										<span class="text-[13px] cursor-pointer">Zvolte soubor...</span>
+									</div>
+								</label>
+								<label class="relative z-0 cursor-pointer">
+									<span class="block text-sm md:text-[15px] mb-1">Přiložená fotografie<span class="text-red-800">
+											*</span></span>
+									<div
+										class="h-11 border border-[#A7B2BE] p-[3px] flex items-center bg-white text-[13px] text-[#8A98A8] w-full outline-none font-light gap-x-3">
+										<div class="flex items-center justify-center w-[39px] h-full bg-[#E2E5E9]">
+											<img src="assets/images/icons/file.svg" alt="">
+										</div>
+										<input type="file" class="absolute w-full h-full opacity-0">
+										<span class="text-[13px] cursor-pointer">Zvolte soubor...</span>
+									</div>
+								</label>
+							</div>
+							<div class="grid mb-3">
+								<label>
+									<span class="block text-sm md:text-[15px] mb-1">V čem je problém <span class="text-red-800">*</span>
+									</span>
+									<textarea type="text" placeholder="Divukraj: Perlava"
+										class="h-[120px] border border-[#A7B2BE] py-2.5 px-3 flex items-center bg-white text-[13px] text-[#8A98A8] w-full outline-none font-light"></textarea>
+								</label>
+							</div>
+							<div class="flex items-center justify-between flex-wrap gap-3">
+								<label class="max-w-[310px] text-color-quaternary text-[13px]">
+									<input type="radio">
+									<span>
+										Souhlasím se zpracováním osobních údajů.
+										Položky označené hvězdičkou (*) jsou povinné.
+									</span>
+								</label>
+								<button type="submit"
+									class="flex items-center text-[12px] xl:text-sm justify-center w-fit rounded-[100px] shadow2 px-6 md:px-9 xl:px-11 py-3 xl:py-4 bg-[#1D71C9] text-white uppercase relative overflow-hidden hover:shadow-none gap-x-1.5 group shadow-[0_3px_4px_0_#0000004D] transition-all duration-300 font-semibold hover:bg-[#3D98F5]">
+									Odeslat
+								</button>
+							</div>
+						</form>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class=" footer relative z-0">
+			<img src="assets/images/footer-icons-bg.svg" alt="" class="absolute top-0 right-0 z-10 w-[150px]">
+			<div class="footer-bg pt-[100px] lg:pt-[110px] 2xl:pt-[135px] pb-5 md:pb-[26px] relative z-20">
+				<div class="container">
+					<h2
+						class="text-center text-color-tertiary uppercase mb-5 text-base md:text-lg xl:text-xl font-bold font-inknut-antiqua">
+						Kontakty</h2>
+					<ul class="flex items-center justify-center gap-x-5 xl:gap-x-[30px] mb-6">
+						<li class="flex items-center gap-x-1.5">
+							<img src="assets/images/icons/phone.svg" alt="" class="w-4">
+							<a href="tel:+3014749625" class="text-[13px] xl:text-[15px] text-white font-medium underline">
+								<span class="font-normal">+420 </span> 774 057 570
+							</a>
+						</li>
+						<li class="h-7 w-[1px] bg-[#566576]"></li>
+						<li class="flex items-center gap-x-1.5">
+							<img src="assets/images/icons/mail.svg" alt="" class="w-[13px]">
+							<a href="tel:+3014749625" class="text-[13px] xl:text-[15px] text-white font-medium underline">
+								obchod@rexhry.cz
+							</a>
+						</li>
+					</ul>
+					<h6 class="uppercase text-sm xl:text-base text-color-tertiary mb-[24px] text-center font-bold">Najdete nás i
+						na
+						sociálních sítích
+					</h6>
+					<ul
+						class="flex items-center gap-x-3 md:gap-x-6 xl:gap-x-[30px] justify-center mb-8 xl:mb-[55px] 2xl:mb-[85px]">
+						<li>
+							<a href="#">
+								<img src="assets/images/icons/youtube2.svg" alt="" class="w-[80px] h-auto">
+							</a>
+						</li>
+						<li class="h-7 w-[1px] bg-[#566576]"></li>
+						<li>
+							<a href="#">
+								<img src="assets/images/icons/facebook2.svg" alt="" class="w-[80px] h-auto">
+							</a>
+						</li>
+						<li class="h-7 w-[1px] bg-[#566576]"></li>
+						<li>
+							<a href="#">
+								<img src="assets/images/icons/instagram2.svg" alt="" class="w-[80px] h-auto">
+							</a>
+						</li>
+					</ul>
+					<ul class="mb-1 flex items-center gap-x-1.5 justify-center">
+						<li>
+							<a href="#" class="text-[13px] font-light text-color-quaternary">Obchodní podmínky</a>
+						</li>
+						<li class="text-[13px] font-light text-color-quaternary">|</li>
+						<li>
+							<a href="#" class="text-[13px] font-light text-color-quaternary">Reklamace</a>
+						</li>
+					</ul>
+					<ul class="flex-col sm:flex-row flex items-center gap-x-1.5 justify-center mb-2.5">
+						<li class="text-[13px] font-light text-color-quaternary">© 2024 Rexhry</li>
+						<li class="text-[13px] font-light text-color-quaternary hidden sm:block">|</li>
+						<li class="text-[13px] font-light text-color-quaternary "> Vytvoril ExpertDev</li>
+						<li class="text-[13px] font-light text-color-quaternary hidden sm:block">|</li>
+						<li class="text-[13px] font-light text-color-quaternary">Všechna práva vyhrazena</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- body-wrapper end -->
+	<script src="assets/js/jquery.js"></script>
+	<script src="dist/fontawesome-6.6.0/js/all.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>

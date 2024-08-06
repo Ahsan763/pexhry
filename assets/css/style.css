@@ -3,10 +3,44 @@ Theme name:;
 autor:ahsan Contact Whatsup + skype +923014749625;
 gmail:naqashahsan@gmail.com
 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--white: #fff;
+	--text-color-primary: #2F3C4A;
+	--text-color-secondary: #1D71C9;
+	--text-color-tertiary: #C4CCD4;
+	--text-color-quaternary: #566576;
+	--text-color-fifth: #576575;
+
+}
+
+.text-color-primary {
+	color: var(--text-color-primary) !important;
+}
+
+.text-color-secondary {
+	color: var(--text-color-secondary) !important;
+}
+
+.text-color-tertiary {
+	color: var(--text-color-tertiary) !important;
+}
+
+.text-color-quaternary {
+	color: var(--text-color-quaternary);
+}
+
+.text-color-fifth {
+	color: var(--text-color-fifth);
+}
 
 body,
 html {
 	font-family: "Be Vietnam Pro", sans-serif;
+	color: var(--text-color-primary);
 }
 
 .league-spartan {
@@ -24,11 +58,14 @@ html {
 	margin: 0 auto;
 	padding: 0 15px;
 }
-.navlink.active::after{
+
+.navlink.active::after {
 	bottom: -7px;
 }
-.navlink.active{
-	color: #1D71C9;
+
+.navlink:hover,
+.navlink.active {
+	color: #1D71C9 !important;
 }
 
 .skew-bg-clip {
@@ -77,7 +114,268 @@ html {
 	background-size: cover;
 	clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%);
 }
-#sidebar.active{
+
+#sidebar.active {
 	box-shadow: 0 0 0 5000px rgba(0, 0, 0, 0.35);
 	transform: translateX(0);
+}
+
+.subBanner {
+	background-image: linear-gradient(rgba(47, 60, 74, 0.9), rgba(47, 60, 74, 0.9)), url(../images/catalog-banner.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 70%);
+}
+
+.subBanner--upcomming {
+	background-image: linear-gradient(rgba(47, 60, 74, 0.9), rgba(47, 60, 74, 0.9)), url(../images/upcomming-banner.png);
+}
+
+.subBanner--aboutus {
+	background-image: linear-gradient(rgba(47, 60, 74, 0.9), rgba(47, 60, 74, 0.9)), url(../images/about-us-bg.png);
+}
+
+.subBanner--address {
+	background-image: linear-gradient(rgba(47, 60, 74, 0.9), rgba(47, 60, 74, 0.9)), url(../images/about-us-bg.png);
+}
+
+.subBanner--contact {
+	background-image: linear-gradient(rgba(47, 60, 74, 0.9), rgba(47, 60, 74, 0.9)), url(../images/contact-bg.png);
+}
+
+label.ckblbl:has(> input[type="checkbox"]:checked) {
+	background-color: #fff;
+}
+
+label.ckblbl:has(> input[type="checkbox"]:checked) span {
+	color: #1D71C9;
+}
+
+label.ckblbl input[type="checkbox"] {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-o-appearance: none;
+	outline: none;
+	content: none;
+}
+
+label.ckblbl input[type="checkbox"]:before {
+	content: "";
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 16px;
+	height: 16px;
+	border: 1px solid var(--text-color-tertiary);
+	border-radius: 50%;
+	cursor: pointer;
+	position: absolute;
+	left: -13px;
+	top: -7px;
+}
+
+label.ckblbl input[type="checkbox"]:checked:before {
+	content: url(../images/icons/catalog/tick.svg);
+	font-size: 20px;
+	padding-left: 5px;
+}
+
+.catalog-tab-link.active {
+	background-color: #E2E5E9;
+	color: #2F3C4A;
+}
+
+.card:hover h6 {
+	color: var(--text-color-secondary) !important;
+}
+
+.page.active,
+.page:hover {
+	color: var(--text-color-primary) !important;
+	background-color: #E2E5E9;
+}
+
+.detailsItemslist {
+	overflow-x: scroll;
+	overflow-y: hidden;
+	width: 100%;
+}
+
+.detailsItemslist::-webkit-scrollbar {
+	height: 8px;
+}
+
+.detailsItemslist::-webkit-scrollbar-track {
+	background: #D4D4D4;
+}
+
+.detailsItemslist::-webkit-scrollbar-thumb {
+	background-color: #959595;
+}
+
+.detsilBox {
+	display: none;
+}
+
+.detsilBox.active {
+	display: block;
+}
+
+.filled-circle {
+	width: 12px;
+	height: 12px;
+	background-color: #1D71C9;
+	border-radius: 50%;
+}
+
+.unfilled-circle {
+	width: 12px;
+	height: 12px;
+	background-color: transparent;
+	border: 2px solid #8A98A8;
+	border-radius: 50%;
+}
+
+.videoSlider-next .fa,
+.videoSlider-next .fa {
+	font-size: 20px;
+}
+
+.videoSlider4 .swiper-button-next,
+.videoSlider4 .swiper-button-prev,
+.videoSlider3 .swiper-button-next,
+.videoSlider3 .swiper-button-prev,
+.videoSlider2 .swiper-button-next,
+.videoSlider2 .swiper-button-prev,
+.videoSlider .swiper-button-next,
+.videoSlider .swiper-button-prev {
+	top: calc(50% - 20px) !important;
+}
+
+.videoSlider-pagination4,
+.videoSlider-pagination3,
+.videoSlider-pagination2,
+.videoSlider-pagination {
+	position: absolute;
+	bottom: 0px !important;
+}
+
+.videoSlider-pagination4 .swiper-pagination-bullet,
+.videoSlider-pagination3 .swiper-pagination-bullet,
+.videoSlider-pagination2.swiper-pagination-bullet,
+.videoSlider-pagination .swiper-pagination-bullet {
+	width: 10px !important;
+	height: 10px !important;
+	border: 2px solid #8A98A8;
+	background-color: transparent;
+	opacity: 1;
+}
+
+.videoSlider-pagination4 .swiper-pagination-bullet-active,
+.videoSlider-pagination3 .swiper-pagination-bullet-active,
+.videoSlider-pagination2 .swiper-pagination-bullet-active,
+.videoSlider-pagination .swiper-pagination-bullet-active {
+	border: 2px solid #1D71C9;
+	background-color: #1D71C9;
+}
+
+.videoSlider4,
+.videoSlider3,
+.videoSlider2,
+.videoSlider {
+	padding-bottom: 40px;
+	padding-inline: 15px;
+}
+
+.card {
+	display: block;
+}
+
+#sidebar ul li a.active {
+	color: var(--text-color-secondary) !important;
+}
+
+.detailsSlSec::after,
+.detailsSlSec::before {
+	content: "";
+	position: absolute;
+	width: 50%;
+	top: 0;
+	height: 100%;
+	z-index: -1;
+}
+
+.detailsSlSec::before {
+	left: 0;
+	background-color: #E2E5E9;
+}
+
+.detailsSlSec::after {
+	right: 0;
+	background-color: #F0F2F4;
+}
+
+.newsfilterbtn.active {
+	background-color: var(--text-color-secondary);
+	color: #fff;
+}
+
+.newsfilterbtn.active img:nth-child(1) {
+	display: none;
+}
+
+.newsfilterbtn.active img:nth-child(2) {
+	display: block;
+}
+
+.aboutBox1 {
+	background-image: linear-gradient(rgba(47, 60, 74, 0.9), rgba(47, 60, 74, 0.9)), url(../images/aboutbox1.png);
+}
+
+.aboutBox2 {
+	background-image: linear-gradient(rgba(47, 60, 74, 0.9), rgba(47, 60, 74, 0.9)), url(../images/aboutbox2.png);
+}
+
+.aboutBox3 {
+	background-image: linear-gradient(rgba(47, 60, 74, 0.9), rgba(47, 60, 74, 0.9)), url(../images/aboutbox3.png);
+}
+
+.aboutBox4 {
+	background-image: linear-gradient(rgba(47, 60, 74, 0.9), rgba(47, 60, 74, 0.9)), url(../images/aboutbox4.png);
+}
+
+@media (min-width: 640px) {
+	.container {
+		max-width: 580px !important;
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+		max-width: 720px !important;
+	}
+}
+
+@media (min-width: 1024px) {
+	.container {
+		max-width: 980px !important;
+	}
+}
+
+@media (min-width:1280px) {
+	.container {
+		max-width: 1200px !important;
+	}
+
+	.videoSlider {
+		padding-bottom: 40px;
+	}
+}
+
+@media (min-width:1536px) {
+	.container {
+		max-width: 1320px !important;
+	}
 }
