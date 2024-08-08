@@ -144,6 +144,10 @@ html {
 	background-image: linear-gradient(rgba(47, 60, 74, 0.9), rgba(47, 60, 74, 0.9)), url(../images/contact-bg.png);
 }
 
+.ckblbl span {
+	text-transform: uppercase;
+}
+
 label.ckblbl:has(> input[type="checkbox"]:checked) {
 	background-color: #fff;
 }
@@ -345,6 +349,66 @@ label.ckblbl input[type="checkbox"]:checked:before {
 .aboutBox4 {
 	background-image: linear-gradient(rgba(47, 60, 74, 0.9), rgba(47, 60, 74, 0.9)), url(../images/aboutbox4.png);
 }
+
+.om-sliderrange {
+	position: relative;
+}
+
+.om-sliderrange-display {
+	position: absolute;
+	top: -20px;
+	left: 50%;
+	transform: translateX(-50%);
+	margin: 0;
+	width: 100%;
+	justify-content: center;
+	column-gap: 10px;
+	font-size: 14px;
+	font-weight: 800;
+	color: var(--text-color-primary);
+}
+
+.om-sliderrange-range:before {
+	background: #A7B2BE;
+}
+
+.om-sliderrange-button-start,
+.om-sliderrange-button-end {
+	cursor: pointer;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	background: #E2E5E9;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	pointer-events: visible;
+	border: 2px solid var(--text-color-secondary);
+}
+
+.om-sliderrange-button-end .dot,
+.om-sliderrange-button-start .dot {
+	/* width: 12px; */
+	/* height: 12px; */
+	/* border: 2px solid var(--text-color-secondary) !important; */
+	/* background: #E2E5E9 !important; */
+	/* outline: 2px solid var(--text-color-secondary); */
+	box-shadow: 0 0 0 3px var(--text-color-secondary);
+	/* border: none; */
+	border-radius: 12px;
+}
+
+/* .om-sliderrange-button-start:focus,
+.om-sliderrange-button-start.active,
+.om-sliderrange-button-end:focus,
+.om-sliderrange-button-end.active {
+	border: 2px solid var(--text-color-secondary) !important;
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	background: #E2E5E9;
+} */
 
 @media (min-width: 640px) {
 	.container {
