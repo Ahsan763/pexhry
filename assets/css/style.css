@@ -17,6 +17,10 @@ gmail:naqashahsan@gmail.com
 
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 .text-color-primary {
 	color: var(--text-color-primary) !important;
 }
@@ -108,7 +112,7 @@ html {
 }
 
 .footer-bg {
-	background-image: linear-gradient(rgba(47, 60, 74, 0.9), rgba(47, 60, 74, 0.9)), url(../images/footer.png);
+	background-image: linear-gradient(rgba(47, 60, 74, 0.95), rgba(47, 60, 74, 0.95)), url(../images/footer.png);
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: cover;
@@ -121,7 +125,7 @@ html {
 }
 
 .subBanner {
-	background-image: linear-gradient(rgba(47, 60, 74, 0.9), rgba(47, 60, 74, 0.9)), url(../images/catalog-banner.png);
+	background-image: linear-gradient(rgba(47, 60, 74, 0.95), rgba(47, 60, 74, 0.95)), url(../images/catalog-banner.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -129,19 +133,19 @@ html {
 }
 
 .subBanner--upcomming {
-	background-image: linear-gradient(rgba(47, 60, 74, 0.9), rgba(47, 60, 74, 0.9)), url(../images/upcomming-banner.png);
+	background-image: linear-gradient(rgba(47, 60, 74, 0.95), rgba(47, 60, 74, 0.95)), url(../images/upcomming-banner.png);
 }
 
 .subBanner--aboutus {
-	background-image: linear-gradient(rgba(47, 60, 74, 0.9), rgba(47, 60, 74, 0.9)), url(../images/about-us-bg.png);
+	background-image: linear-gradient(rgba(47, 60, 74, 0.95), rgba(47, 60, 74, 0.95)), url(../images/about-us-bg.png);
 }
 
 .subBanner--address {
-	background-image: linear-gradient(rgba(47, 60, 74, 0.9), rgba(47, 60, 74, 0.9)), url(../images/about-us-bg.png);
+	background-image: linear-gradient(rgba(47, 60, 74, 0.95), rgba(47, 60, 74, 0.95)), url(../images/about-us-bg.png);
 }
 
 .subBanner--contact {
-	background-image: linear-gradient(rgba(47, 60, 74, 0.9), rgba(47, 60, 74, 0.9)), url(../images/contact-bg.png);
+	background-image: linear-gradient(rgba(47, 60, 74, 0.95), rgba(47, 60, 74, 0.95)), url(../images/contact-bg.png);
 }
 
 .ckblbl span {
@@ -335,19 +339,19 @@ label.ckblbl input[type="checkbox"]:checked:before {
 }
 
 .aboutBox1 {
-	background-image: linear-gradient(rgba(47, 60, 74, 0.9), rgba(47, 60, 74, 0.9)), url(../images/aboutbox1.png);
+	background-image: linear-gradient(rgba(47, 60, 74, 0.95), rgba(47, 60, 74, 0.95)), url(../images/aboutbox1.png);
 }
 
 .aboutBox2 {
-	background-image: linear-gradient(rgba(47, 60, 74, 0.9), rgba(47, 60, 74, 0.9)), url(../images/aboutbox2.png);
+	background-image: linear-gradient(rgba(47, 60, 74, 0.95), rgba(47, 60, 74, 0.95)), url(../images/aboutbox2.png);
 }
 
 .aboutBox3 {
-	background-image: linear-gradient(rgba(47, 60, 74, 0.9), rgba(47, 60, 74, 0.9)), url(../images/aboutbox3.png);
+	background-image: linear-gradient(rgba(47, 60, 74, 0.95), rgba(47, 60, 74, 0.95)), url(../images/aboutbox3.png);
 }
 
 .aboutBox4 {
-	background-image: linear-gradient(rgba(47, 60, 74, 0.9), rgba(47, 60, 74, 0.9)), url(../images/aboutbox4.png);
+	background-image: linear-gradient(rgba(47, 60, 74, 0.95), rgba(47, 60, 74, 0.95)), url(../images/aboutbox4.png);
 }
 
 .om-sliderrange {

@@ -352,7 +352,7 @@
 					</div>
 					<div class="w-full lg:w-[75%]">
 						<div class="flex flex-wrap items-center justify-between gap-2 border-b border-[#E2E5E9] mb-5">
-							<ul class="flex flex-wrap gap-x-2 gap-y-1">
+							<ul class="flex flex-wrap gap-y-1">
 								<li>
 									<div
 										class="catalog-tab-link active py-3 xl:py-[13px] px-3.5 xl:px-5 text-xs text-[14px] text-color-quaternary uppercase font-extrabold hover:bg-[#E2E5E9] leading-[1] block  cursor-pointer">
@@ -360,23 +360,23 @@
 								</li>
 								<li>
 									<div
-										class="catalog-tab-link active py-3 xl:py-[13px] px-3.5 xl:px-5 text-xs text-[14px] text-color-quaternary uppercase font-extrabold hover:bg-[#E2E5E9] leading-[1] block cursor-pointer">
+										class="catalog-tab-link py-3 xl:py-[13px] px-3.5 xl:px-5 text-xs text-[14px] text-color-quaternary uppercase font-extrabold hover:bg-[#E2E5E9] leading-[1] block cursor-pointer">
 										Název
 										A–Z</div>
 								</li>
 								<li>
 									<div
-										class="catalog-tab-link active py-3 xl:py-[13px] px-3.5 xl:px-5 text-xs text-[14px] text-color-quaternary uppercase font-extrabold hover:bg-[#E2E5E9] leading-[1] block cursor-pointer">
+										class="catalog-tab-link py-3 xl:py-[13px] px-3.5 xl:px-5 text-xs text-[14px] text-color-quaternary uppercase font-extrabold hover:bg-[#E2E5E9] leading-[1] block cursor-pointer">
 										Nejlevnější</div>
 								</li>
 								<li>
 									<div
-										class="catalog-tab-link active py-3 xl:py-[13px] px-3.5 xl:px-5 text-xs text-[14px] text-color-quaternary uppercase font-extrabold hover:bg-[#E2E5E9] leading-[1] block cursor-pointer">
+										class="catalog-tab-link py-3 xl:py-[13px] px-3.5 xl:px-5 text-xs text-[14px] text-color-quaternary uppercase font-extrabold hover:bg-[#E2E5E9] leading-[1] block cursor-pointer">
 										Nejdražší</div>
 								</li>
 								<li>
 									<div
-										class="catalog-tab-link active py-3 xl:py-[13px] px-3.5 xl:px-5 text-xs text-[14px] text-color-quaternary uppercase font-extrabold hover:bg-[#E2E5E9] leading-[1] block cursor-pointer">
+										class="catalog-tab-link py-3 xl:py-[13px] px-3.5 xl:px-5 text-xs text-[14px] text-color-quaternary uppercase font-extrabold hover:bg-[#E2E5E9] leading-[1] block cursor-pointer">
 										Nejnovější</div>
 								</li>
 							</ul>
@@ -1345,7 +1345,7 @@
 								<a href="#"
 									class="grid place-items-center w-[26px] h-[26px] text-color-quaternary page transition-all duration-300 text-[15px] font-extrabold rounded-full cursor-pointer">1</a>
 								<a href="#"
-									class="grid place-items-center w-[26px] h-[26px] text-color-quaternary page active transition-all duration-300 text-[15px] font-extrabold rounded-full cursor-pointer">2</a>
+									class="grid place-items-center w-[26px] h-[26px] text-color-quaternary page transition-all duration-300 text-[15px] font-extrabold rounded-full cursor-pointer">2</a>
 								<a href="#"
 									class="grid place-items-center w-[26px] h-[26px] text-color-quaternary page transition-all duration-300 text-[15px] font-extrabold rounded-full cursor-pointer">3</a>
 								<a href="#"
@@ -1378,11 +1378,17 @@
 		</section>
 		<!-- catalog end -->
 		<footer class=" footer relative z-0">
-			<img src="assets/images/footer-icons-bg.svg" alt="" class="absolute top-0 right-0 z-10 w-[150px]">
+			<a href="#" class="flex items-center gap-x-1.5 absolute right-7 md:hidden z-50">
+				<span class="font-extrabold text-xs">nahoru</span>
+				<div class="w-6 h-6 bg-[#E2E5E9] rounded-full flex items-center justify-center">
+					<img src="assets/images/Vector.svg" alt="" class="w-2.5 h-auto">
+				</div>
+			</a>
+			<img src="assets/images/footer-icons-bg.svg" alt="" class="absolute top-0 right-0 z-10 w-[150px] md:block hidden">
 			<div class="footer-bg pt-[100px] lg:pt-[110px] 2xl:pt-[135px] pb-5 md:pb-[26px] relative z-20">
 				<div class="container">
 					<h2
-						class="text-centertext-color-tertiaryC4CCD4] uppercase mb-5 text-base md:text-lg xl:text-xl font-bold font-inknut-antiqua">
+						class="text-center text-color-tertiary uppercase mb-5 text-base md:text-lg xl:text-xl font-bold font-inknut-antiqua">
 						Kontakty</h2>
 					<ul class="flex items-center justify-center gap-x-5 xl:gap-x-[30px] mb-6">
 						<li class="flex items-center gap-x-1.5">
@@ -1399,8 +1405,8 @@
 							</a>
 						</li>
 					</ul>
-					<h6 class="uppercase text-sm xl:text-basetext-color-tertiaryC4CCD4] mb-[24px] text-center font-bold">Najdete
-						nás i na
+					<h6 class="uppercase text-sm xl:text-base text-color-tertiary mb-[24px] text-center font-bold">Najdete nás i
+						na
 						sociálních sítích
 					</h6>
 					<ul
