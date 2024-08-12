@@ -195,6 +195,18 @@ label.ckblbl input[type="checkbox"]:checked:before {
 	color: #2F3C4A;
 }
 
+.filter-btn {
+	cursor: pointer;
+}
+
+.filter-tab {
+	display: none;
+}
+
+.filter-tab.active {
+	display: grid;
+}
+
 .card:hover h6 {
 	color: var(--text-color-secondary) !important;
 }

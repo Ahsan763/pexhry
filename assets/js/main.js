@@ -20,6 +20,14 @@ $(document).ready(function () {
     $(".detsilBox.active").removeClass("active");
     $(matchID).addClass("active");
   });
+  $(".filter-btn").click(function (e) {
+    e.preventDefault();
+    $(".filter-btn").removeClass("active");
+    $(".filter-tab").removeClass("active");
+    $(this).addClass("active");
+    var targetTab = $(this).attr("link");
+    $(targetTab).addClass("active");
+  });
 
   var swiper = new Swiper(".bannerSlider", {
     slidesPerView: 1,
